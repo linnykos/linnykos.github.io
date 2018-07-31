@@ -1,1 +1,242 @@
-Hello world
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Kevin Lin, CMU Statistics</title>
+	<meta name="google-site-verification" content="_icP2W3B6y_gFG92Dh-caUWIh_sEnE4tPu8pghzaH2w" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $("a").on('click', function(event) {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+	
+	      var hash = this.hash;
+	
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 500, function(){
+	        window.location.hash = hash;
+	      });
+	    }
+	  });
+	});
+	</script>
+</head>
+
+<body>
+  <div class="banner">
+    <div id="header">
+      <div id="name">
+        Kevin Lin
+      </div>
+      <div id="navigator">
+        <div class="nav_cell"><a class="nav" href="#about">about</a></div>
+        <div class="nav_cell"><a class="nav" href="#research">research</a></div>
+        <div class="nav_cell"><a class="nav" href="#talks">talks</a></div>
+        <div class="nav_cell"><a class="nav" href="#experience">experience</a></div>
+        <div class="nav_cell"><a class="nav" href="#courses">courses</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main">
+
+    <div class="content">
+      <a class="anchor" id="about"></a>
+      <div class="introduction">
+        <div id="selfie">
+          <img src="images/selfie.jpg" /><br>
+          <div style="text-align: center; margin-top: 10px; font-size: 12px; font-family: monospace;">klin1234 [at] gmail [dot] com</div>
+        </div>
+        <div class="right">
+        <p>I am working on my Ph.D. from the 
+        <a class="link" href="http://www.stat.cmu.edu/" target="_blank">Department of Statistics & Data Science</a> at <a class="link" href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>, under supervision of Professor <a class="link" href="http://www.stat.cmu.edu/~roeder/" target="_blank">Kathryn Roeder</a>. 
+        My research mainly focuses on developing statistical methods to understand complex data dependencies found in epigenetics applications. Recently, I have been researching changepoint detection and network models. I also have a growing interest in topics relating to statistical practice that formalize how data scientists interact with their datasets.
+        The code for my research are available on <a class="link" href="https://github.com/linnylin92" target="_blank">GitHub</a>.
+        </p>
+
+        <p>
+        I also have a M.S. in <a class="link" href="https://www.ml.cmu.edu/" target="_blank">Machine Learning</a> from 
+        <a class="link" href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>.
+		    Before coming to CMU, I got my B.S.E. in Operations Research and Financial Enginnering from <a class="link" href="https://www.orfe.princeton.edu/" target="_blank">Princeton University</a>, in 2014, along with a Certificate in Statistics and Machine Learning as well as a Certificate in Applications of Computing.
+        </p>
+        
+      </div>
+    </div>
+    <hr>
+
+    <div class="content">
+      <div class="title">Research</div>
+      <a class="anchor" id="research"></a>
+
+      <div class="subtitle">Theory and Methodology</div>
+
+      <div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/plot-dependency.png">
+          <div class="right">
+            <div class="research_title">
+              Dependency diagnostic
+            </div>
+            <p>
+Dependency graphs such as correlation graphs can represent complex pairwise patterns, but often times we cannot use visual diagnostics to investigate whether or not our numerical methods behaved appropriately. There are a quadratic number of scatter plots, too many to manually plot and interpret. In this paper, we develop an interactive system in R that learns whether or not the data scientist visually interprets dependency based on a scatterplot. This system then applies this learned classifier to the scatter plots that the data scientist did not see to infer the remainder of the dependency graph. This paper won honorable mention for the Student Paper Award in the ASA Section: <a class="link" href="http://stat-computing.org/awards/comp-graphics/winners.html" target="_blank">Statistical Computing and Statistical Graphics</a>. 
+           </p>
+          </div>
+        </div>
+        <div class="publication">
+			  <i>In development.</i>
+        </div>
+      </div>
+ 
+<div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/plot-binseg.png">
+          <div class="right">
+            <div class="research_title">
+              Post-selection inference for changepoint problems
+            </div>
+            <p> asdf
+            </p>
+          </div>
+        </div>
+        <div class="publication">
+                          <i>In development.</i>
+        </div>
+      </div>
+
+<div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/plot-brainspan.png">
+          <div class="right">
+            <div class="research_title">
+              Covariance-based sample selection for heterogenous data
+            </div>
+            <p> asdf
+            </p>
+          </div>
+        </div>
+        <div class="publication">
+                          <i>In development.</i>
+        </div>
+      </div>
+
+<div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/plot-fused.png">
+          <div class="right">
+            <div class="research_title">
+              Fused lasso and changepoint screening
+            </div>
+            <p> asdf
+            </p>
+          </div>
+        </div>
+        <div class="publication">
+                          <i>In development.</i>
+        </div>
+      </div>
+
+<div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/plot-cs.png">
+          <div class="right">
+            <div class="research_title">
+              Compressed sensing
+            </div>
+            <p> asdf
+            </p>
+          </div>
+        </div>
+        <div class="publication">
+                          <i>In development.</i>
+        </div>
+      </div>
+
+
+
+     <div class="subtitle">Application</div>
+ <div class="block">
+        <div class="abstract">
+            <div class="application_title">
+          Analysis of 7,608 genomes highlights a role for promoter regions in Autism Spectrum Disorder
+            </div>
+            <div class="publication">
+              J. An*, <span class="emph">K. Lin</span>*, L. Zhu*, D. M. Werling*, S. Dong, J. D. Buxbaum, H. Coon, M. J. Daly, N. Sestan, M. W. State, ASC-WGS Consortium, M. E. Talkowski, B. Devlin, K. Roeder, S. J. Sanders 
+            <br><i>Science</i>, Accepted, to appear. (*Equal contributions) <br> 
+			      </div>
+          </div>
+      </div>     
+
+   <hr>
+    
+    <div class="content">
+      <div class="title">Talks</div>
+      <a class="anchor" id="talks"></a>
+
+      <ul>
+			  <li>
+			  <i>to fill</i> (talk).<br>
+			  to fill
+			  </li>
+      </ul>
+    </div>
+
+    <hr>
+    
+    <div class="content">
+      <div class="title">Experience</div>
+      <a class="anchor" id="experience"></a>
+
+      <div class="subtitle">Honors and Awards</div>
+      <ul>
+        <li>
+        To fill
+        </li>
+       
+      </ul>
+
+    <div class="subtitle">Teaching Assistant</div>
+
+      <ul>
+			  <li>To fill</li>
+      </ul>
+
+      <div class="subtitle">Professional Service</div>
+
+      <ul>
+          <li>
+          Founding member of <a class="link" href="http://www.stat.cmu.edu/help-network/" target="_blank">CMU Statistics department help network</a>, May 2017 -- May 2018
+          </li>
+      </ul>
+
+	    
+
+    </div>
+  <div style="margin-top: 10px; text-align: center; font-size: 14px;">
+  Copyright &copy; 2015 - 2018, Kevin Lin. All rights reserved.<br>
+  Last Updated: July 30, 2018.
+  </div>
+
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+		var sc_project=10595714; 
+		var sc_invisible=1; 
+		var sc_security="ee39bc4f"; 
+		var scJsHost = (("https:" == document.location.protocol) ?
+			"https://secure." : "http://www.");
+		document.write("<sc"+"ript type='text/javascript' src='" +
+			scJsHost+
+			"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="shopify visitor
+		statistics" href="http://statcounter.com/shopify/"
+		target="_blank"><img class="statcounter"
+		src="http://c.statcounter.com/10595714/0/ee39bc4f/1/"
+		alt="shopify visitor statistics"></a></div></noscript>
+		<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>
