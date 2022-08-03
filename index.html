@@ -52,7 +52,7 @@
           <div style="text-align: center; margin-top: 10px; font-size: 12px; font-family: monospace;">kevinL1 [at] wharton.upenn.com</div>
         </div>
         <div class="right">
-        <p>I am working on my post-doc with Professor <a class="link" href="https://statistics.wharton.upenn.edu/profile/nzh/" target="_blank">Nancy Zhang</a>, and received my Ph.D. from the
+        <p>I am working on my post-doc with Professor <a class="link" href="https://nzhanglab.github.io/" target="_blank">Nancy Zhang</a>, and received my Ph.D. from the
         <a class="link" href="http://www.stat.cmu.edu/" target="_blank">Department of Statistics & Data Science</a> at <a class="link" href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>, under supervision of Professor <a class="link" href="http://www.stat.cmu.edu/~roeder/" target="_blank">Kathryn Roeder</a> and  Professor <a class="link" href="http://www.stat.cmu.edu/~jinglei/" target="_blank">Jing Lei</a>.
         My research mainly focuses on investigating regulation
         among biological systems (such as in the developing brain to
@@ -93,6 +93,61 @@
       <div class="subtitle">Preprints/In Preparation</div>
 
 
+<!-- tilted-cca -->
+<div class="block">
+  <div class="abstract">
+    <img class="project_img" src="images/plot-tcca.png">
+    <div class="right">
+      <div class="research_title">
+       Tilted-CCA for paired multiomic single-cell data
+      </div>
+      <p>
+    Paired multiomic single-cell data provides ample opportunities for biologists
+    to study the relations between molecular modalities (such as gene expression and chromatin
+    peaks), but it difficult to assess what kind of signals are shared in common
+    between the two modalities. We developed the Tilted-CCA, which shows the "intersection
+    of information" between the two modalities, in contrast with many existing
+    dimension-reduction methods that show the "union of information." In particular,
+    the matrix decomposition provided by Tilted-CCA allows us to design targeted
+    antibody panels for RNA and surface-antibody technologies, as well as uncover
+    the terminal cell-states as well as the relation between chromatin open/closed cell-states
+    and gene expression in developmental systems.
+      </p>
+    </div>
+  </div>
+  <div class="publication">
+    <span class="emph">K. Z. Lin</span>, and <a class="link" href="https://nzhanglab.github.io/" target="_blank">N. R. Zhang</a>
+                    Understanding common and distinct information in paired multiomic data with Tilted-CCA<br>
+                   In preparation
+  </div>
+</div>
+
+<!-- eSVD-de -->
+<div class="block">
+  <div class="abstract">
+    <img class="project_img" src="images/plot-esvd-de.png">
+    <div class="right">
+      <div class="research_title">
+       eSVD for differential expression in multi-individual scRNA data
+      </div>
+      <p>
+    As single-cell RNA-seq (scRNA) transitions from studying cell-lines, clonal mice or
+    a few individuals into studying cohorts of individuals, there is a need to 
+    create new differential expression (DE) methods to investigate DE among individuals
+    instead of among cells. Towards this end, we tailor the eSVD, formerly a dimension-reduction tool, equipped with a downstream
+    pipeline to perform DE in multi-individual scRNA data, where we both design our test statistics to account for variability among and within individuals as well as incorporating
+    the individual-level covariates into the eSVD framework. We show that this can recover
+    reproducible signals across different datasets as well as achieves higher power thanks 
+    to its dimension-reduction framework.
+      </p>
+    </div>
+  </div>
+  <div class="publication">
+    <span class="emph">K. Z. Lin</span>, <a class="link" href="https://statr.me/" target="_blank">Y. Qiu</a>, and <a class="link" href="http://www.stat.cmu.edu/~roeder/" target="_blank">K. Roeder</a>
+                    eSVD: Cohort-level differential expression in multi-individual single-cell RNA-seq data using exponential-family embeddings<br>
+                   In preparation
+  </div>
+</div>
 
 <!-- dynamic SBM -->
 <div class="block">
@@ -114,9 +169,9 @@
     </div>
   </div>
   <div class="publication">
-    <span class="emph">K. Z. Lin</span>, <a class="link" href="http://www.stat.cmu.edu/~roeder/" target="_blank">K. Roeder</a>, and
+    <span class="emph">K. Z. Lin</span> and
                     <a class="link" href="http://www.stat.cmu.edu/~jinglei/" target="_blank">J. Lei</a><br>
-                    Time-varying stochastic block models via kernel smoothing, with application to gene co-expression networks during cell development<br>
+                   Spectral clustering for heterophilic stochastic block models with dynamic node memberships<br>
                    In preparation
   </div>
 </div>
@@ -278,6 +333,32 @@ localization in regression settings<br>
       </div>
 
 
+<!-- brainspan -->
+<div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/plot-brainspan.png">
+          <div class="right">
+            <div class="research_title">
+              Covariance-based sample selection for heterogeneous data
+            </div>
+            <p> Microarray samples from brain tissue is hard to collect, and also varies substantially depending on the tissue's brain region and the developmental age of its subject, hence it is hard to collect enough samples for the statistical analysis.
+            In this paper, we develop a sample selection method to find additional microarray samples that are statistically similar to the samples of our desired spatio-temporal brain tissue.
+            We demonstrate that after apply an existing analysis pipeline to our selected samples, we detect a higher percentage of autism risk genes.
+            </p>
+          </div>
+        </div>
+        <div class="publication">
+          <span class="emph">K. Z. Lin</span>,
+                          <a class="link" href="http://magics.cs.northwestern.edu/index.html" target="_blank">H. Liu</a>, and
+                          <a class="link" href="http://www.stat.cmu.edu/~roeder/" target="_blank">K. Roeder</a> <br>
+                          Covariance-based sample selection for heterogeneous data: Applications to gene expression and autism risk gene detection<br>
+                         <i> <a class="link" href="https://amstat.tandfonline.com/toc/uasa20/current" target="_blank">Journal of the American Statistical Association</a> (JASA)</i> 116.533 (2021): 54-67
+                         (<a class="link" href="https://www.tandfonline.com/doi/abs/10.1080/01621459.2020.1738234?journalCode=uasa20" target="_blank">link</a>)
+(<a class="link" href="https://arxiv.org/abs/1812.08147" target="_blank">arxiv</a>)
+(<a class="link" href="https://github.com/linnykos/covarianceSelection" target="_blank">git</a>)
+        </div>
+      </div>
+
 <!-- ecv -->
 <div class="block">
         <div class="abstract">
@@ -305,88 +386,7 @@ localization in regression settings<br>
         </div>
       </div>
 
-
-<!-- brainspan -->
-<div class="block">
-        <div class="abstract">
-          <img class="project_img" src="images/plot-brainspan.png">
-          <div class="right">
-            <div class="research_title">
-              Covariance-based sample selection for heterogeneous data
-            </div>
-            <p> Microarray samples from brain tissue is hard to collect, and also varies substantially depending on the tissue's brain region and the developmental age of its subject, hence it is hard to collect enough samples for the statistical analysis.
-            In this paper, we develop a sample selection method to find additional microarray samples that are statistically similar to the samples of our desired spatio-temporal brain tissue.
-            We demonstrate that after apply an existing analysis pipeline to our selected samples, we detect a higher percentage of autism risk genes.
-            </p>
-          </div>
-        </div>
-        <div class="publication">
-          <span class="emph">K. Z. Lin</span>,
-                          <a class="link" href="http://magics.cs.northwestern.edu/index.html" target="_blank">H. Liu</a>, and
-                          <a class="link" href="http://www.stat.cmu.edu/~roeder/" target="_blank">K. Roeder</a> <br>
-                          Covariance-based sample selection for heterogeneous data: Applications to gene expression and autism risk gene detection<br>
-                         <i> <a class="link" href="https://amstat.tandfonline.com/toc/uasa20/current" target="_blank">Journal of the American Statistical Association</a> (JASA)</i> 116.533 (2021): 54-67
-                         (<a class="link" href="https://www.tandfonline.com/doi/abs/10.1080/01621459.2020.1738234?journalCode=uasa20" target="_blank">link</a>)
-(<a class="link" href="https://arxiv.org/abs/1812.08147" target="_blank">arxiv</a>)
-(<a class="link" href="https://github.com/linnykos/covarianceSelection" target="_blank">git</a>)
-        </div>
-      </div>
-
-<!-- fused lasso -->
-<div class="block">
-        <div class="abstract">
-          <img class="project_img" src="images/plot-fused.png">
-          <div class="right">
-            <div class="research_title">
-              Fused lasso and changepoint screening
-            </div>
-            <p> Changepoint estimators have statistical theory for how well they estimate the mean function and how well they estimate the changepoints, but existing theory often analyzes these properties separately. In this paper, we prove a near-optimal estimation rate for the fused lasso, which in turn directly proves a changepoint detection rate that is near the detection limit. We extend this logic to other estimators and settings.
-            </p>
-          </div>
-        </div>
-        <div class="publication">
-          <span class="emph">K. Z. Lin</span>,
-                          <a class="link" href="https://jsharpna.github.io/" target="_blank">J. Sharpnack</a>,
-                          <a class="link" href="http://www.stat.cmu.edu/~arinaldo/" target="_blank">A. Rinaldo</a>, and
-                          <a class="link" href="http://www.stat.cmu.edu/~ryantibs/index.html" target="_blank">R. J. Tibshirani</a> <br>
-                          A sharp error analysis for the fused Lasso, with application to approximate changepoint screening<br>
-                          <i><a class="link" href="https://nips.cc/" target="_blank">Advances in Neural Information Processing Systems</a> (NeurIPS)</i> (2017).
-                          (<a class="link" href="http://papers.nips.cc/paper/7264-a-sharp-error-analysis-for-the-fused-lasso-with-application-to-approximate-changepoint-screening" target="_blank">link</a>)
-                      (<a class="link" href="https://arxiv.org/abs/1606.06746" target="_blank">arxiv</a>) (<a class="link" href="https://github.com/linnykos/fused_lasso" target="_blank">git</a>)
-        </div>
-      </div>
-
-<!-- cs -->
-<div class="block">
-        <div class="abstract">
-          <img class="project_img" src="images/plot-cs.png">
-          <div class="right">
-            <div class="research_title">
-              Compressed sensing
-            </div>
-            <p> Many compressed sensing are developed to be as generic as possible, but have shortcomings in specialized settings where modern optimization theory can deliver a substantial boost in computational efficiency. In this paper, we develop two compressed sensing algorithms, one specialized for extremely sparse signals and another specialized for Kronecker-structed sensing matrices. We
-            numerically demonstrate a near 10-times reduction in
-            computation time compared to other state-of-the-art methods.
-            </p>
-          </div>
-        </div>
-        <div class="publication">
-          <a class="link" href="https://vanderbei.princeton.edu/" target="_blank">R. Vanderbei</a>,
-          <span class="emph">K. Z. Lin</span>,
-                          <a class="link" href="http://magics.cs.northwestern.edu/index.html" target="_blank">H. Liu</a>, and
-                          <a class="link" href="http://math.mit.edu/~liewang/" target="_blank">L. Wang</a><br>
-                          Revisiting compressed sensing: Exploiting the efficiency
-of simplex and sparsification methods<br>
-                          <i><a class="link" href="https://www.springer.com/mathematics/journal/12532" target="_blank">Mathematical Programming Computation</a></i> 8.3 (2016): 253-269.
-                          (<a class="link" href="https://link.springer.com/article/10.1007/s12532-016-0105-y" target="_blank">link</a>)
-                      (<a class="link" href="papers/cs.pdf" target="_blank">pdf</a>)
-                      (<a class="link" href="https://github.com/linnykos/compress_sensing" target="_blank">git</a>)
-        </div>
-      </div>
-
-
-
-<div class="subtitle">Application (Published)</div>
+      
 <div class="block">
    <div class="abstract">
      <img class="project_img" src="images/plot-science.png">
@@ -429,7 +429,33 @@ of simplex and sparsification methods<br>
                      (<a class="link" href="http://science.sciencemag.org/content/362/6420" target="_blank">link</a>)
                  (<a class="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6432922/pdf/nihms-1015808.pdf" target="_blank">pdf</a>) (<a class="link" href="https://github.com/lingxuez/WGS-Analysis" target="_blank">git</a>)
    </div>
- </div>
+ </div>      
+
+<!-- fused lasso -->
+<div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/plot-fused.png">
+          <div class="right">
+            <div class="research_title">
+              Fused lasso and changepoint screening
+            </div>
+            <p> Changepoint estimators have statistical theory for how well they estimate the mean function and how well they estimate the changepoints, but existing theory often analyzes these properties separately. In this paper, we prove a near-optimal estimation rate for the fused lasso, which in turn directly proves a changepoint detection rate that is near the detection limit. We extend this logic to other estimators and settings.
+            </p>
+          </div>
+        </div>
+        <div class="publication">
+          <span class="emph">K. Z. Lin</span>,
+                          <a class="link" href="https://jsharpna.github.io/" target="_blank">J. Sharpnack</a>,
+                          <a class="link" href="http://www.stat.cmu.edu/~arinaldo/" target="_blank">A. Rinaldo</a>, and
+                          <a class="link" href="http://www.stat.cmu.edu/~ryantibs/index.html" target="_blank">R. J. Tibshirani</a> <br>
+                          A sharp error analysis for the fused Lasso, with application to approximate changepoint screening<br>
+                          <i><a class="link" href="https://nips.cc/" target="_blank">Advances in Neural Information Processing Systems</a> (NeurIPS)</i> (2017).
+                          (<a class="link" href="http://papers.nips.cc/paper/7264-a-sharp-error-analysis-for-the-fused-lasso-with-application-to-approximate-changepoint-screening" target="_blank">link</a>)
+                      (<a class="link" href="https://arxiv.org/abs/1606.06746" target="_blank">arxiv</a>) (<a class="link" href="https://github.com/linnykos/fused_lasso" target="_blank">git</a>)
+        </div>
+      </div>
+
+
 
 <div class="subtitle">One-off Projects</div>
 <div class="block">
@@ -459,6 +485,35 @@ of simplex and sparsification methods<br>
                      <i><a class="link" href="https://www2022.thewebconf.org/" target="_blank">The ACM WebConf 2022</a></i>, To appear. (<a class="link" href="https://arxiv.org/abs/2101.00078" target="_blank">arxiv</a>) (<a class="link" href="https://github.com/anjalief/wikipedia_bias_public" target="_blank">git</a>)
    </div>
  </div>
+ 
+<!-- cs -->
+<div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/plot-cs.png">
+          <div class="right">
+            <div class="research_title">
+              Compressed sensing
+            </div>
+            <p> Many compressed sensing are developed to be as generic as possible, but have shortcomings in specialized settings where modern optimization theory can deliver a substantial boost in computational efficiency. In this paper, we develop two compressed sensing algorithms, one specialized for extremely sparse signals and another specialized for Kronecker-structed sensing matrices. We
+            numerically demonstrate a near 10-times reduction in
+            computation time compared to other state-of-the-art methods.
+            </p>
+          </div>
+        </div>
+        <div class="publication">
+          <a class="link" href="https://vanderbei.princeton.edu/" target="_blank">R. Vanderbei</a>,
+          <span class="emph">K. Z. Lin</span>,
+                          <a class="link" href="http://magics.cs.northwestern.edu/index.html" target="_blank">H. Liu</a>, and
+                          <a class="link" href="http://math.mit.edu/~liewang/" target="_blank">L. Wang</a><br>
+                          Revisiting compressed sensing: Exploiting the efficiency
+of simplex and sparsification methods<br>
+                          <i><a class="link" href="https://www.springer.com/mathematics/journal/12532" target="_blank">Mathematical Programming Computation</a></i> 8.3 (2016): 253-269.
+                          (<a class="link" href="https://link.springer.com/article/10.1007/s12532-016-0105-y" target="_blank">link</a>)
+                      (<a class="link" href="papers/cs.pdf" target="_blank">pdf</a>)
+                      (<a class="link" href="https://github.com/linnykos/compress_sensing" target="_blank">git</a>)
+        </div>
+      </div>
+ 
 
 <div class="content">
   <div class="title">Articles</div>
