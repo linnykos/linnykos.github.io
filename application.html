@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Kevin Lin, UPenn Statistics</title>
+	<meta name="google-site-verification" content="_icP2W3B6y_gFG92Dh-caUWIh_sEnE4tPu8pghzaH2w" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $("a").on('click', function(event) {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+
+	      var hash = this.hash;
+
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 500, function(){
+	        window.location.hash = hash;
+	      });
+	    }
+	  });
+	});
+	</script>
+</head>
+
+<body>
+  <div class="banner">
+    <div id="header">
+      <div id="name">
+        Kevin Lin
+      </div>
+      <div id="navigator">
+        <div class="nav_cell"><a class="nav" href="#about">about</a></div>
+        <div class="nav_cell"><a class="nav" href="#research">research</a></div>
+        <div class="nav_cell"><a class="nav" href="#talks">talks</a></div>
+        <div class="nav_cell"><a class="nav" href="#experience">experience</a></div>
+        <div class="nav_cell"><a class="nav" href="application.html">research statement</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main">
+
+
+    <div class="content">
+      <div class="statement">Research statements</div>
+      <a class="anchor" id="statement"></a>
+      
+      In order to improve the accessibility of resources/materials for applications for future researchers, here are copies of my materials:
+
+      <ul>
+
+           <li>
+			  <i>Job application for assistant professor positions (2022-2023)</i><br>
+			  (<a class="link" href="application/cover.pdf" target="_blank">cover</a>)
+			 (<a class="link" href="application/cv.pdf" target="_blank">cv</a>)
+			 (<a class="link" href="application/research.pdf" target="_blank">research</a>)
+			 (<a class="link" href="application/teaching.pdf" target="_blank">teaching</a>)
+			 (<a class="link" href="application/diversity.pdf" target="_blank">diversity</a>)
+			 (<a class="link" href="application/talk.pdf" target="_blank">job talk</a>)
+			  </li>
+    </div>
+
+    </div>
+  <div style="margin-top: 10px; text-align: center; font-size: 14px;">
+  Copyright &copy; 2015 - 2023, Kevin Lin. All rights reserved.<br>
+  Last Updated: April 6, 2023
+  </div>
+
+</body>
+</html>
