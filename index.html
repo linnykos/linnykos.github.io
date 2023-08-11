@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
   <title>Kevin Lin, UPenn Statistics</title>
 	<meta name="google-site-verification" content="_icP2W3B6y_gFG92Dh-caUWIh_sEnE4tPu8pghzaH2w" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -54,8 +56,8 @@
         <div class="right">
         <p>I am a tenure-track assistant professor at <a class="link" href="https://www.biostat.washington.edu/" target="_blank">UW Biostatistics</a>, having started in Fall 2023.
         Previously, I received my Ph.D. from the
-        <a class="link" href="http://www.stat.cmu.edu/" target="_blank">Department of Statistics & Data Science</a> at <a class="link" href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>, under supervision of Professor <a class="link" href="https://kathrynmroeder.github.io/" target="_blank">Kathryn Roeder</a> and  Professor <a class="link" href="http://www.stat.cmu.edu/~jinglei/" target="_blank">Jing Lei</a>, and completed my post-doctoral training
-         with Professor <a class="link" href="https://nzhanglab.github.io/" target="_blank">Nancy Zhang</a>.
+        <a class="link" href="http://www.stat.cmu.edu/" target="_blank">Department of Statistics & Data Science</a> at <a class="link" href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>, under supervision of Dr. <a class="link" href="" target="_blank" data-link="kathryn_roeder">Kathryn Roeder</a> and Dr. <a class="link" href="" target="_blank" data-link="jing_lei">Jing Lei</a>, and completed my post-doctoral training
+         with Dr. <a class="link" href="" target="_blank" data-link="nancy_zhang">Nancy Zhang</a>.
         I am excited to be joining  as an tenure-track assistant professor starting August 2023.
         </p>
 
@@ -96,41 +98,6 @@
       <a class="anchor" id="research"></a>
 
 <div class="subtitle">Preprints/In Preparation</div>
-
-    <!-- maxfuse -->
-<div class="block">
-      <div class="abstract">
-        <img class="project_img" src="images/plot-maxfuse.png">
-        <div class="right">
-          <div class="research_title">
-            MaxFuse: Diagonal integration of single-cell sequencing data
-          </div>
-          <p>
-Different sequencing technologies offer complementary insights into a biological
-system, but it becomes difficult to integrate two datasets together when both
-datasets differ in the specific cells sequenced as well as which features are measured.
-Hence, using an iterative co-embedding based on CCA, data smoothing, and cell matching, we match cells in one dataset (i.e., one modality) to the other.
-The effectiveness of our method is demonstrated by integrating scRNA-seq
-and surface-antibody data, as well as scRNA-seq data with spatial proteomic data (such as CODEX) and scATAC-seq.
-         </p>
-        </div>
-      </div>
-      <div class="publication">
-        <a class="link" href="https://sxc.moe/" target="_blank">S. Chen</a>,
-        B. Zhu,
-        S. Huang,
-        J. W. Hickey,
-        <span class="emph">K. Z. Lin</span>,
-        <a class="link" href="https://med.stanford.edu/snyderlab.html" target="_blank">M. Snyder</a>,
-        <a class="link" href="https://greenleaf.stanford.edu/" target="_blank">W. J. Greenleaf</a>,
-        <a class="link" href="http://web.stanford.edu/group/nolan/" target="_blank">G. P. Nolan</a>,
-        <a class="link" href="https://nzhanglab.github.io/" target="_blank">N. R. Zhang</a>, and
-        <a class="link" href="https://zmastat.github.io/" target="_blank">Z. Ma</a>
-		  <br>
-        Integration of spatial and single-cell data across modalities with weak linkage<br>
-      2023. (<a class="link" href="https://www.biorxiv.org/content/10.1101/2023.01.12.523851v2" target="_blank">biorxiv</a>)
-      </div>
-    </div>
 
 
 <!-- dynamic SBM -->
@@ -219,6 +186,40 @@ Then, this system applies the learned classifier to infer a dependency graph tha
 
 <div class="subtitle">Published papers</div>
 
+   <!-- maxfuse -->
+<div class="block">
+      <div class="abstract">
+        <img class="project_img" src="images/plot-maxfuse.png">
+        <div class="right">
+          <div class="research_title">
+            MaxFuse: Diagonal integration of single-cell sequencing data
+          </div>
+          <p>
+Different sequencing technologies offer complementary insights into a biological
+system, but it becomes difficult to integrate two datasets together when both
+datasets differ in the specific cells sequenced as well as which features are measured.
+Hence, using an iterative co-embedding based on CCA, data smoothing, and cell matching, we match cells in one dataset (i.e., one modality) to the other.
+The effectiveness of our method is demonstrated by integrating scRNA-seq
+and surface-antibody data, as well as scRNA-seq data with spatial proteomic data (such as CODEX) and scATAC-seq.
+         </p>
+        </div>
+      </div>
+      <div class="publication">
+        <a class="link" href="https://sxc.moe/" target="_blank">S. Chen</a>,
+        B. Zhu,
+        S. Huang,
+        J. W. Hickey,
+        <span class="emph">K. Z. Lin</span>,
+        <a class="link" href="https://med.stanford.edu/snyderlab.html" target="_blank">M. Snyder</a>,
+        <a class="link" href="https://greenleaf.stanford.edu/" target="_blank">W. J. Greenleaf</a>,
+        <a class="link" href="http://web.stanford.edu/group/nolan/" target="_blank">G. P. Nolan</a>,
+        <a class="link" href="https://nzhanglab.github.io/" target="_blank">N. R. Zhang</a>, and
+        <a class="link" href="https://zmastat.github.io/" target="_blank">Z. Ma</a>
+		  <br>
+        Integration of spatial and single-cell data across modalities with weak linkage<br>
+      <a class="link" href="https://www.nature.com/nbt/" target="_blank">Nature Biotechnology</a> (To appear, 2023). (<a class="link" href="https://www.biorxiv.org/content/10.1101/2023.01.12.523851v2" target="_blank">biorxiv</a>)
+      </div>
+    </div>
 
 <!-- tilted-cca -->
 <div class="block">
@@ -796,5 +797,6 @@ of simplex and sparsification methods<br>
   Last Updated: July 31, 2023
   </div>
 
+<script src="script.js"></script>
 </body>
 </html>
