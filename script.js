@@ -31,7 +31,7 @@ const websiteLinks = {
     robert_vanderbei: "https://vanderbei.princeton.edu/",
     daren_wang: "https://darenwang.github.io/website/",
     lie_wang: "http://math.mit.edu/~liewang/",
-    donna_werling: "https://genetics.wisc.edu/staff/werling/",
+    donna_werling: "https://werling.genetics.wisc.edu/",
     rebecca_willet: "https://voices.uchicago.edu/willett/",
     jingnan_zhang: "https://www.sta.cuhk.edu.hk/peoples/zhang-jingnan/",
     nancy_zhang: "https://nzhanglab.github.io/",
