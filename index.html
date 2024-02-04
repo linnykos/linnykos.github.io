@@ -37,9 +37,8 @@
       <div id="navigator">
         <div class="nav_cell"><a class="nav" href="#about">about</a></div>
         <div class="nav_cell"><a class="nav" href="#research">research</a></div>
-        <div class="nav_cell"><a class="nav" href="#talks">talks</a></div>
-        <div class="nav_cell"><a class="nav" href="#experience">experience</a></div>
         <div class="nav_cell"><a href="resources.html">resources</a></div>
+        <div class="nav_cell"><a href="papers/cv.pdf">cv</a></div>
       </div>
     </div>
   </div>
@@ -50,7 +49,7 @@
       <a class="anchor" id="about"></a>
       <div class="introduction">
         <div id="selfie">
-          <img src="images/selfie.jpg" /><br>
+          <img src="images/selfie.png" /><br>
           <div style="text-align: center; margin-top: 10px; font-size: 12px; font-family: monospace;">kzlin [at] uw.edu</div>
         </div>
         <div class="right">
@@ -62,8 +61,8 @@
         </p>
 
         <p>My research mainly focuses on investigating regulation
-        among biological systems (such as in the developing brain to
-        understand the autism spectrum or in immune cells to understand
+        among biological systems (such as in the aging brain to
+        understand dementia and resilience or in immune cells to understand
         acquired resistance to immunotherapy) through
         single-cell data.
         This entails
@@ -77,15 +76,8 @@
         The code for my research are available on <a href="https://github.com/linnykos" target="_blank">git</a>, and my Google Scholar page is <a href="https://scholar.google.com/citations?user=0ARIIHYAAAAJ&hl=en" target="_blank">here</a>.
         </p>
 
-<!--        <p>
-        I also have a M.S. in <a class="link" href="https://www.ml.cmu.edu/" target="_blank">Machine Learning</a> from
-        <a class="link" href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>.
-		    Before coming to CMU, I got my B.S.E. in <a class="link" href="https://www.orfe.princeton.edu/" target="_blank">Operations Research and Financial Engineering</a> from <a class="link" href="https://www.princeton.edu/" target="_blank">Princeton University</a> in 2014, along with a Certificate in Statistics and Machine Learning as well as a Certificate in Applications of Computing.
-        </p>
--->
-
         <p>
-        When taking a break from work, I am a fanatic fan of zumba, cooking, Yu-Gi-Oh, and poetry. Follow my adventures on <a href="https://www.instagram.com/linnykos/?hl=en" target="_blank">Instagram</a>! (Fun fact: The "Z." in "Kevin Z. Lin" is simply
+        When taking a break from work, I am a fanatic fan of zumba and cooking. Follow my adventures on <a href="https://www.instagram.com/linnykos/?hl=en" target="_blank">Instagram</a>! (Fun fact: The "Z." in "Kevin Z. Lin" is simply
         for publishing purposes, and is not an official middle name.)
         </p>
 
@@ -139,7 +131,7 @@
     <img class="project_img" src="images/plot-esvd-de.png">
     <div class="right">
       <div class="research_title">
-       eSVD for differential expression in multi-individual scRNA data
+       eSVD-DE for differential expression in multi-individual scRNA data
       </div>
       <p>
     As single-cell RNA-seq (scRNA) transitions from studying cell-lines, clonal mice or
@@ -147,7 +139,7 @@
     create new differential expression (DE) methods to investigate DE among individuals
     instead of among cells. Towards this end, we tailor the eSVD, formerly a dimension-reduction tool, equipped with a downstream
     pipeline to perform DE in multi-individual scRNA data, where we both design our test statistics to account for variability among and within individuals as well as incorporating
-    the individual-level covariates into the eSVD framework. We show that this can recover
+    the individual-level covariates into the eSVD-DE framework. We show that this can recover
     reproducible signals across different datasets as well as achieves higher power thanks
     to its dimension-reduction framework.
       </p>
@@ -158,40 +150,13 @@
     <a class="link" href="" target="_blank" data-link="yixuan_qiu">Y. Qiu</a>, and
     <a class="link" href="" target="_blank" data-link="kathryn_roeder">K. Roeder</a>.
     <br>
-                    eSVD: Cohort-level differential expression in single-cell RNA-seq data using exponential-family embeddings<br>
- (<a href="papers/cohort_eSVD.pdf" target="_blank">main text</a>)
+                    eSVD-DE: Cohort-wide differential expression in single-cell RNA-seq data using exponential-family embeddings<br>
+                    In revision (2023):
+                   (<a href="https://www.biorxiv.org/content/10.1101/2023.11.22.568369v1" target="_blank">biorxiv</a>)
+                   (<a href="https://github.com/linnykos/eSVD2" target="_blank">code: method</a>)
+                   (<a href="https://github.com/linnykos/eSVD2_examples" target="_blank">code: analysis</a>)
   </div>
 </div>
-
-
-
-<!-- dependency -->
-<div class="block">
-      <div class="abstract">
-        <img class="project_img" src="images/plot-dependency.png">
-        <div class="right">
-          <div class="research_title">
-            Dependency diagnostic via scatter plots
-          </div>
-          <p>
-Dependency graphs encode complex pairwise patterns that are often statistically estimated, but are often hard to diagnose with visualizations due to the quadratic number of scatter plots.
-In this paper, we develop an interactive system in R that learns if the data scientist visually interprets dependency.
-Then, this system applies the learned classifier to infer a dependency graph that can be compared against the estimated graph. This paper won honorable mention for the Student Paper Award in the ASA Section: <a href="http://stat-computing.org/awards/student/winners.html" target="_blank">Statistical Computing and Statistical Graphics</a> (2018).
-         </p>
-        </div>
-      </div>
-      <div class="publication">
-        <span class="emph">K. Z. Lin</span> and T. Kim.
-<!--		  <a class="link" href="https://www.linkedin.com/in/amy-tian-797892153" target="_blank">A. Tian</a>
-		  and
-		  <a class="link" href="http://magics.cs.northwestern.edu/index.html" target="_blank">H. Liu</a> -->
-		  <br>
-        Interactive dependency visualizer: Understanding pairwise variable relationships, applied to single-cell RNA-seq data<br>
-		 In preparation
-      </div>
-    </div>
-
-
 
 <div class="subtitle">Published papers</div>
 
@@ -227,7 +192,7 @@ and surface-antibody data, as well as scRNA-seq data with spatial proteomic data
 		  <br>
         Integration of spatial and single-cell data across modalities with weak linkage<br>
       <a href="https://www.nature.com/nbt/" target="_blank">Nature Biotechnology</a>
-      (To appear, 2023).
+      To appear (2023):
       (<a href="https://www.nature.com/articles/s41587-023-01935-0" target="_blank">link</a>)
       (<a href="https://www.biorxiv.org/content/10.1101/2023.01.12.523851v2" target="_blank">biorxiv</a>)
       (<a href="https://github.com/shuxiaoc/maxfuse" target="_blank">code: method</a>)
@@ -263,7 +228,7 @@ and surface-antibody data, as well as scRNA-seq data with spatial proteomic data
     <br>
                     Quantifying common and distinct information in single-cell multimodal data with Tilted-CCA<br>
                    <a href="https://www.pnas.org/" target="_blank">Proceedings of the National Academy of Sciences</a> (PNAS)
-                   (To appear, 2023).
+                   120.23 (2023):
                    (<a href="https://www.pnas.org/doi/10.1073/pnas.2303647120" target="_blank">link</a>)
                    (<a href="https://www.biorxiv.org/content/10.1101/2022.10.07.511320v1" target="_blank">biorxiv</a>)
                    (<a href="https://github.com/linnykos/tiltedCCA" target="_blank">code: method</a>)
@@ -299,7 +264,7 @@ and surface-antibody data, as well as scRNA-seq data with spatial proteomic data
       <a class="link" href="" target="_blank" data-link="yuchao_jiang">Y. Jiang</a>.
                      <br>
                      Destin2: Integrative and cross-modality analysis of single-cell chromatin accessibility data<br>
-                     <i><a href="https://www.frontiersin.org/journals/genetics" target="_blank">Frontiers in Genetics</a></i> 14 (2023),
+                     <i><a href="https://www.frontiersin.org/journals/genetics" target="_blank">Frontiers in Genetics</a></i> 14 (2023):
                      (<a href="https://www.frontiersin.org/articles/10.3389/fgene.2023.1089936/full" target="_blank">link</a>)
                      (<a href="https://www.biorxiv.org/content/10.1101/2022.11.04.515202v1" target="_blank">biorxiv</a>)
    </div>
@@ -337,7 +302,7 @@ and surface-antibody data, as well as scRNA-seq data with spatial proteomic data
                           Bias-adjusted spectral clustering in multi-layer
                           stochastic block models<br>
                          <i> <a href="https://amstat.tandfonline.com/toc/uasa20/current" target="_blank">Journal of the American Statistical Association</a> (JASA)</i>
-                         (To appear, 2022)
+                         To appear (2022):
                          (<a href="https://amstat.tandfonline.com/doi/full/10.1080/01621459.2022.2054817" target="_blank">link</a>)
                          (<a href="https://arxiv.org/abs/2003.08222" target="_blank">arxiv</a>)
                          (<a href="https://github.com/linnykos/networkSoSD" target="_blank">git</a>)
@@ -533,7 +498,7 @@ localization in regression settings<br>
       <a class="link" href="" target="_blank" data-link="stephan_sanders">S. J. Sanders</a>. (*Equal contributions)
                      <br>
                      Genome-wide de novo risk score implicates promoter variation in autism spectrum disorder<br>
-                     <i><a href="http://science.sciencemag.org/" target="_blank">Science</a></i> 362.6420 (2018).
+                     <i><a href="http://science.sciencemag.org/" target="_blank">Science</a></i> 362.6420 (2018):
                      (<a href="https://www.science.org/doi/full/10.1126/science.aat6576" target="_blank">link</a>)
                  (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6432922/pdf/nihms-1015808.pdf" target="_blank">pdf</a>)
                  (<a href="https://github.com/lingxuez/WGS-Analysis" target="_blank">git</a>)
@@ -559,7 +524,7 @@ localization in regression settings<br>
           <a class="link" href="" target="_blank" data-link="ryan_tibshirani">R. J. Tibshirani</a>.
           <br>
                           A sharp error analysis for the fused Lasso, with application to approximate changepoint screening<br>
-                          <i><a href="https://nips.cc/" target="_blank">Advances in Neural Information Processing Systems</a> (NeurIPS)</i> (2017).
+                          <i><a href="https://nips.cc/" target="_blank">Advances in Neural Information Processing Systems</a> (NeurIPS)</i> (2017):
                           (<a href="http://papers.nips.cc/paper/7264-a-sharp-error-analysis-for-the-fused-lasso-with-application-to-approximate-changepoint-screening" target="_blank">link</a>)
                       (<a href="https://arxiv.org/abs/1606.06746" target="_blank">arxiv</a>)
                       (<a href="https://github.com/linnykos/fused_lasso" target="_blank">git</a>)
@@ -596,12 +561,35 @@ localization in regression settings<br>
       <a class="link" href="" target="_blank" data-link="yulia_tsvetkov">Y. Tsvetkov</a>.
                      <br>
                      Controlled Analyses of Social Biases in Wikipedia Bios<br>
-                     <i><a href="https://www2022.thewebconf.org/" target="_blank">Proceedings of the ACM Web Conference 2022</a></i>,
+                     <i><a href="https://www2022.thewebconf.org/" target="_blank">Proceedings of the ACM Web Conference 2022</a></i> (2022):
                      (<a href="https://dl.acm.org/doi/abs/10.1145/3485447.3512134" target="_blank">link</a>)
                      (<a href="https://arxiv.org/abs/2101.00078" target="_blank">arxiv</a>)
                      (<a href="https://github.com/anjalief/wikipedia_bias_public" target="_blank">git</a>)
    </div>
  </div>
+ 
+ 
+<!-- dependency -->
+<div class="block">
+      <div class="abstract">
+        <img class="project_img" src="images/plot-dependency.png">
+        <div class="right">
+          <div class="research_title">
+            Dependency diagnostic via scatter plots
+          </div>
+          <p>
+Dependency graphs encode complex pairwise patterns that are often statistically estimated, but are often hard to diagnose with visualizations due to the quadratic number of scatter plots.
+In this paper, we develop an interactive system in R that learns if the data scientist visually interprets dependency.
+Then, this system applies the learned classifier to infer a dependency graph that can be compared against the estimated graph. This paper won honorable mention for the Student Paper Award in the ASA Section: <a href="http://stat-computing.org/awards/student/winners.html" target="_blank">Statistical Computing and Statistical Graphics</a> (2018).
+         </p>
+        </div>
+      </div>
+      <div class="publication">
+        <span class="emph">K. Z. Lin</span> and T. Kim.
+		  <br>
+        Interactive dependency visualizer: Understanding pairwise variable relationships, applied to single-cell RNA-seq data<br>
+      </div>
+    </div>
 
 <!-- cs -->
 <div class="block">
@@ -652,248 +640,9 @@ of simplex and sparsification methods<br>
 
     <hr>
 
-    <div class="content">
-      <div class="title">Talks and posters</div>
-      <a class="anchor" id="talks"></a>
-<ul>
-    <li>
-        <i>Tilted-CCA: Quantifying common and distinct information in jointly-sequenced multiomic single-cell data</i> (poster).<br>
-        2023 McGill Biostatistics Seminar. (Remote)
-    </li>
-
-    <li>
-        <i>Tilted-CCA: Quantifying common and distinct information in jointly-sequenced multiomic single-cell data</i> (poster).<br>
-        2023 Cell Symposia: The conceptual power of single cell biology. (Remote)
-    </li>
-
-    <li>
-        <i>Tilted-CCA: Quantifying common and distinct information in jointly-sequenced multiomic single-cell data</i> (poster).<br>
-        2023 Scripps CBB Monthly Seminar. (Remote)
-    </li>
-
-    <li>
-        <i>eSVD-DE: Cohort-level differential expression in single-cell data via matrix factorization</i> (talk).<br>
-        2023 Joint Statistical Meetings (JSM), Toronto, Canada.
-    </li>
-
-    <li>
-        <i>Tilted-CCA: Quantifying common and distinct information in jointly-sequenced multiomic single-cell data</i> (poster).<br>
-        2023 New Researcher's Conference (NRC), Toronto, Canada.
-    </li>
-
-    <li>
-        <i>Spectral clustering for heterophilic stochastic block models with dynamic node memberships</i> (talk).<br>
-        2023 International Chinese Statistical Association (ICSA) Applied Statistics Symposium, Ann Arbor, MI.
-    </li>
-
-    <li>
-        <i>Tilted-CCA: Quantifying common and distinct information in jointly-sequenced multiomic single-cell data</i> (talk).<br>
-        2022 Joint Statistical Meetings (JSM), Washington DC.
-    </li>
-
-    <li>
-        <i>Spectral clustering for multi-layer stochastic block models: Theoretical analysis of static and dynamic settings for heterophilic networks</i> (talk).<br>
-        2022 Symposium on Data Science and Statistics (SDSS), Pittsburgh, PA.
-    </li>
-
-    <li>
-        <i>Exponential-family embedding for single-cell data with applications to developmental trajectory and differential expression</i> (talk).<br>
-        2021 UCLA Department of Statistics: Seminar Series. (Remote)
-    </li>
-
-    <li>
-        <i>Time-varying stochastic block models, with application to understanding the dynamics of gene co-expression</i> (talk).<br>
-        2021 StatScale Seminar. (Remote)
-    </li>
-
-    <li>
-        <i>Exponential-family embedding with application to cell developmental trajectories for single-cell RNA-Seq data</i> (poster).<br>
-        2020 American Society of Human Genetics (ASHG). (Remote)
-    </li>
-
-    <li>
-        <i>Exponential-family embedding with application to cell developmental trajectories for single-cell RNA-Seq data</i> (talk).<br>
-        Joint talk with Professor <a class="link" href="https://kathrynmroeder.github.io/" target="_blank">Kathryn Roeder</a><br>
-        2020 Joint Statistical Meetings (JSM), Philadelphia, Pennsylvania. (Remote)
-    </li>
-
-    <li>
-        <i>Time-varying stochastic block models via kernel smoothing, with application to RNA-Seq data and cell development</i> (talk).<br>
-        2020 Joint Statistical Meetings (JSM), Philadelphia, Pennsylvania. (Remote)
-    </li>
-
-    <li>
-        <i>Exponential-family embedding with application to cell developmental trajectories for single-cell RNA-Seq data</i> (talk).<br>
-        2019 Joint Statistical Meetings (JSM), Denver, Colorado.
-    </li>
-
-    <li>
-        <i>Dependency diagnostic: Visually understanding pairwise variable relationships</i> (talk).<br>
-        2018 Joint Statistical Meetings (JSM), Vancouver, Canada.
-    </li>
-
-    <li>
-        <i>A sharp error analysis for the fused lasso, with application to approximate changepoint screening</i> (poster).<br>
-        2017 Conference on Neural Information Processing Systems (NeurIPS), Long Beach, CA.
-    </li>
-
-    <li>
-        <i>Hypothesis testing for simultaneous variable clustering and correlation network estimation, with applications to gene coexpression networks</i> (talk).<br>
-        2017 Joint Statistical Meetings (JSM), Baltimore, MD.
-    </li>
-
-    <li>
-        <i>Longitudinal Gaussian graphical model for autism risk gene detection</i> (talk).<br>
-        2016 Joint Statistical Meetings (JSM), Chicago, IL.
-    </li>
-
-    <li>
-        <i>Longitudinal Gaussian graphical model integrating gene expression and sequencing data for autism risk gene detection</i> (poster).<br>
-        2015 American Society of Human Genetics (ASHG), Baltimore, MD.
-    </li>
-
-    <li>
-        <i>Optimization for compressed sensing: New insights and alternatives</i> (talk).<br>
-        2014 Modeling and Optimization: Theory and Applications, Bethlehem, PA.
-    </li>
-</ul>
-    </div>
-
-    <hr>
-
-    <div class="content">
-      <div class="title">Experience</div>
-      <a class="anchor" id="experience"></a>
-
-      <div class="subtitle">Honors and Awards</div>
-      <ul>
-
-          <li>
-        <i>PhD TAs of the year</i><br>
-        (For the Spring 2020 semester, one of two recipients)<br>
-        Carnegie Mellon University, May 2020
-        </li>
-             <li>
-        <i>Honorable mention in student paper competition</i><br>
-        (For article "Dependency diagnostic: Visually understanding pairwise variable relationships")<br>
-        ASA section: Statistical Computing and Statistical Graphics, January 2018
-        </li>
-
-        <li>
-        <i>Winner of Statistical excellence for early-career writing</i><br>
-        (For article "We, the millennials: The statistical significance of political significance")<br>
-        Significance magazine in partnership with Young Statisticians Section of Royal Statistical Society, June 2017
-        </li>
-
-        <li>
-        <i>Teaching assistant award recipient</i><br>
-        (For "Statistical Computing" in Fall 2016)<br>
-        Carnegie Mellon University, May 2017
-        </li>
-
-         <li>
-        <i>Award recipient of Kenneth H. Condit Prize</i><br>
-        (For excellence in service to department)<br>
-        Princeton University, May 2014
-        </li>
-
-      </ul>
-
-    <div class="subtitle">Teaching Experience</div>
-
-      <ul>
-        <li>(2022 January) Section on Statistics in Genetics and Genomics: An Introduction to Deep Learning in Omics (TA for a virtual short course under
-        <a class="link" href="" target="_blank" data-link="wei_sun">W. Sun</a>
-        and
-        <a class="link" href="" target="_blank" data-link="nancy_Zhang">N. R. Zhang</a>
-        )</li>
-       <li>(2020 Spring) CMU: 36-469 Statistical Genomics and High Dimensional Inference (co-instructor with
-       <a class="link" href="" target="_blank" data-link="kathryn_roeder">K. Roeder</a>
-       )</li>
-        <li>(2019 Spring) CMU: 36-490 Undergraduate Research (Data Science Initiative Project Fellow under
-        <a class="link" href="" target="_blank" data-link="rebecca_nugent">R. Nugent</a>
-        and
-        <a class="link" href="" target="_blank" data-link="peter_freeman">P. Freeman</a>
-        )</li>
-			   <li>(2018 Summer) CMU: 36-350 Statistical Computing (Instructor)</li>
-			   <li>(2018 Spring) CMU: 36-350 Statistical Computing (Assistant Instructor with
-			   <a class="link" href="" target="_blank" data-link="ryan_tibshirani">R. J. Tibshirani</a>
-			   )</li>
-			   <li>(2017 Fall) 36-350 CMU: Statistical Computing (TA under
-			   <a class="link" href="" target="_blank" data-link="peter_freeman">P. Freeman</a>
-			   )</li>
-			   <li>(2015 Fall, 2016 Fall) CMU: 36-350 Statistical Computing (TA under
-			   <a class="link" href="" target="_blank" data-link="ryan_tibshirani">R. J. Tibshirani</a>
-			   )</li>
-			    <li>(2015 Spring) CMU: 36-217 Probability Theory and Random Processes (TA under
-			    <a class="link" href="" target="_blank" data-link="alessandro_rinaldo">A. Rinaldo</a>
-			    )</li>
-			    <li>(2014 Fall) CMU: 46-921 Financial Data Analysis I and 46-923 Financial Data Analysis II (TA under
-			    <a class="link" href="" target="_blank" data-link="chad_schafer">C. Schafer</a>
-			    )</li>
-			    <li>(2014 Spring, 2013 Spring, 2012 Spring) Princeton: ORF 350 Analysis of Big Data (Course designer with
-			    <a class="link" href="" target="_blank" data-link="han_liu">H. Liu</a>
-			    )</li>
-      </ul>
-
-      <div class="subtitle">Professional Service</div>
-
-<ul>
-   <li>
-    Faculty on the Equity Diversity and Inclusitivity (EDI) Committee, for the Biostatistics department, as part of the broader EDI committee in the School of Public Health (SPH) (Fall 2023 onwards)
-  </li>
-
-   <li>
-    Discussant for a reading group for the <a href="https://www.biometricsociety.org/education/journal-club" target="_blank">International Biometric Society Journal club</a>
-    (for <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.13885" target="_blank">A stochastic block Ising model for multi-layer networks with inter-layer dependence</a>
-    presented by <a class="link" href="" target="_blank" data-link="jingnan_zhang">J. Zhang</a>,
-    organized by <a class="link" href="" target="_blank" data-link="gen_li">G. Li</a>,
-    August 2023, virtual)
-  </li>
-
-  <li>
-    Chaired an invited session at JSM titled "Addressing statistical challenges in precision medicine with single cell and spatial omics data" (organized by <a class="link" href="" target="_blank" data-link="ziyi_li">Z. Li</a>, August 2023, Toronto, Canada)
-  </li>
-  <li>
-    Certified by <a href="https://www.mentalhealthfirstaid.org/" target="_blank">Mental Health First Aid USA</a> (September 2020)
-  </li>
-  <li>
-    Certified by <a href="https://www.cmu.edu/teaching/graduatestudentsupport/futurefacultyprogram.html" target="_blank">CMU's Eberly Center's Future Faculty Program</a> (Fall 2019 to Summer 2020)
-  </li>
-  <li>
-    Certified via <a href="https://qprinstitute.com/" target="_blank">QPR (Question, Persuade, Refer)</a> gatekeeper certificate by the QPR suicide prevention gatekeeper program (February 2020)
-  </li>
-  <li>
-    Founding member of CMU Statistics department wellness network (2018-2020)
-  </li>
-  <li>
-    Reviewer of
-    <a href="https://projecteuclid.org/journals/annals-of-applied-statistics" target="_blank">Annals of Applied Statistics</a>,
-    <a href="https://projecteuclid.org/euclid.aos" target="_blank">Annals of Statistics</a>,
-    <a href="https://projecteuclid.org/journals/bayesian-analysis" target="_blank">Bayesian Analysis</a>,
-    <a href="https://onlinelibrary.wiley.com/journal/15410420" target="_blank">Biometrics</a>,
-    <a href="https://academic.oup.com/biomet" target="_blank">Biometrika</a>,
-    <a href="https://www.cell.com/" target="_blank">Cell Press</a>,
-    <a href="https://projecteuclid.org/euclid.ejs" target="_blank">Electronic Journal of Statistics</a>,
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488902" target="_blank">IEEE Transactions on Network Science and Engineering</a>,
-    <a href="https://www.jmlr.org/" target="_blank">Journal of Machine Learning Research</a>,
-    <a href="https://www.journals.elsevier.com/journal-of-molecular-biology" target="_blank">Journal of Molecular Biology</a>,
-    <a href="https://www.tandfonline.com/toc/uasa20/current" target="_blank">Journal of the American Statistical Association</a>,
-    <a href="https://www.nature.com/neuro/" target="_blank">Nature Neuroscience</a>,
-    <a href="http://www3.stat.sinica.edu.tw/statistica/" target="_blank">Statistical Sinica</a>,
-    <a href="https://www.journals.elsevier.com/statistics-and-probability-letters" target="_blank">Statistics and Probability Letters</a>,
-    <a href="https://onlinelibrary.wiley.com/journal/10970258" target="_blank">Statistics in Medicine</a>,
-    <a href="https://www.tandfonline.com/toc/utch20/current" target="_blank">Technometrics</a>
-  </li>
-</ul>
-
-
-
-
-    </div>
   <div style="margin-top: 10px; text-align: center; font-size: 14px;">
-  Copyright &copy; 2015 - 2023, Kevin Lin. All rights reserved.<br>
-  Last Updated: October 21, 2023
+  Copyright &copy; 2015 - 2024, Kevin Lin. All rights reserved.<br>
+  Last Updated: January 30, 2024
   </div>
 
 <script src="script.js"></script>
