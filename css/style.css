@@ -74,6 +74,13 @@ body {
   margin-top: 10px;
   margin-bottom: 30px;
 }
+.block_lab {
+  margin-left: 25px;
+  border-left: 5px solid #ddd;
+  padding-left: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .introduction {
   margin-bottom: 20px;
 }
@@ -93,6 +100,12 @@ body {
   margin-right: 20px;
   float: left;
   width: 250px;
+}
+.lab_img {
+  margin-right: 20px;
+  float: left;
+  height: 100px;
+  width: 100px;
 }
 .nav_cell {
   display: inline-block;
