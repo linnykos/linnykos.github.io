@@ -17,6 +17,7 @@ const websiteLinks = {
     garry_nolan: "http://web.stanford.edu/group/nolan/",
     rebecca_nugent: "https://www.stat.cmu.edu/~rnugent/PUBLIC/",
     chan_park: "https://chan0park.github.io/",
+    katherine_prater: "https://x.com/katieeprater?lang=en",
     yixuan_qiu: "https://statr.me/",
     alessandro_rinaldo: "https://www.stat.cmu.edu/~arinaldo/",
     kathryn_roeder: "https://kathrynmroeder.github.io/",
