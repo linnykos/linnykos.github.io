@@ -90,10 +90,6 @@
         EDI committee). If you are part of UW and would like to collaborate in mental health/wellness resources or ideas, would love to promote new mental health/wellness initiative/training or have related ideas to our department, please contact me!
         </p>
 
-         <p>
-        <b>For new students</b>: I am likely going to take one or two PhDs to become new members of my lab in Fall 2024. If you are interested in single-cell biology and have a proclivity to develop statistical methods, please email me with your CV!
-        </p>
-
         <p>
         <b>Note</b>: There are multiple "Kevin Lin"'s at the University of Washington. Be sure to contact me at the correct email (ID: kzlin)!
         </p>
@@ -109,27 +105,26 @@
 
 <div class="subtitle">Preprints/In Preparation</div>
 
-<!-- Glia -->
+<!-- LCL -->
 <div class="block">
   <div class="abstract">
-  <img class="project_img" src="images/plot-glia.png">
+  <img class="project_img" src="images/plot-lcl.png">
   <div class="right">
   <div class="research_title">
-  Single-cell analysis review in glial cells
+  Lineage-aware contrastive learning
   </div>
   <p>
-  Computational single-cell analyses have become quite complex.
-  While there are many tools for any particular specific analysis, researchers new to single-cell analyses might often feel overwhelmed and not immediately understand the logical flow that connects one computational method to another.
-  This review paper highlights the underlying logic of how to craft a computational workflow, tailored for the biological context of studying glial cells.
-  It starts with thinking about the experimental design, and spotlights common pitfalls when planning your own computational workflow.
+  In static lineage-barcoding single-cell sequencing, we measure both each cell's gene expression and its ancestry in order to gain insights into a cell's fate. However, there lack methods to identify which genes separate the cells by their lineages. In this work, we develop a deep-learning architecture based on contrastive learning to isolate the information in the gene expression that recapitulates cells' lineages. We use the lineage barcoe as the premise of our data augmentation mechanism. This strategy enables us to better identify the genes driving fate commitment and cells' fate boundaries.
   </p>
   </div>
   </div>
   <div class="publication">
-  <a class="link" href="" target="_blank" data-link="katherine_prater">K. E. Prater</a> and <span class="emph">K. Z. Lin</span>.
+   <a class="link" href="" target="_blank" data-link="joshua_yang">S. J. Yang</a>,
+    <a class="link" href="" target="_blank" data-link="yixin_wangi">Y. Wang</a>, and <span class="emph">K. Z. Lin</span>.
   <br>
-  All the single cells: Single-cell transcriptomics/epigenomics experimental design and analysis considerations for glial biologists<br>
-  (<a href="https://arxiv.org/abs/2408.06521" target="_blank">arxiv</a>) 
+  LCL: Contrastive Learning for Lineage Barcoded scRNA-seq Data<br>
+  (<a href="https://www.biorxiv.org/content/10.1101/2024.10.28.620670v1" target="_blank">arxiv</a>)
+  (<a href="https://github.com/SZ-yang/Lineage-aware_CL" target="_blank">github</a>)
   </div>
 </div>
 
@@ -166,6 +161,30 @@
 
 <div class="subtitle">Published papers</div>
 
+<!-- Glia -->
+<div class="block">
+  <div class="abstract">
+  <img class="project_img" src="images/plot-glia.png">
+  <div class="right">
+  <div class="research_title">
+  Single-cell analysis review in glial cells
+  </div>
+  <p>
+  Computational single-cell analyses have become quite complex.
+  While there are many tools for any particular specific analysis, researchers new to single-cell analyses might often feel overwhelmed and not immediately understand the logical flow that connects one computational method to another.
+  This review paper highlights the underlying logic of how to craft a computational workflow, tailored for the biological context of studying glial cells.
+  It starts with thinking about the experimental design, and spotlights common pitfalls when planning your own computational workflow.
+  </p>
+  </div>
+  </div>
+  <div class="publication">
+  <a class="link" href="" target="_blank" data-link="katherine_prater">K. E. Prater</a> and <span class="emph">K. Z. Lin</span>.
+  <br>
+  All the single cells: Single-cell transcriptomics/epigenomics experimental design and analysis considerations for glial biologists<br>
+  <a href="https://onlinelibrary.wiley.com/journal/10981136" target="_blank">Glia</a>
+     To appear (2024): (<a href="https://arxiv.org/abs/2408.06521" target="_blank">arxiv</a>)
+  </div>
+</div>
 
 
 <!-- eSVD-de -->
@@ -195,7 +214,7 @@
     <br>
                     eSVD-DE: Cohort-wide differential expression in single-cell RNA-seq data using exponential-family embeddings<br>
                     <a href="https://bmcbioinformatics.biomedcentral.com/" target="_blank">BMC Bioinformatics</a>
-      To appear (2024):
+      25.1 (2024):
       (<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-024-05724-7" target="_blank">link</a>)
                    (<a href="https://www.biorxiv.org/content/10.1101/2023.11.22.568369v1" target="_blank">biorxiv</a>)
                    (<a href="https://github.com/linnykos/eSVD2" target="_blank">code: method</a>)
@@ -236,7 +255,7 @@ and surface-antibody data, as well as scRNA-seq data with spatial proteomic data
 		  <br>
         Integration of spatial and single-cell data across modalities with weak linkage<br>
       <a href="https://www.nature.com/nbt/" target="_blank">Nature Biotechnology</a>
- (2023):
+ 42 (2023):
       (<a href="https://www.nature.com/articles/s41587-023-01935-0" target="_blank">link</a>)
       (<a href="https://www.biorxiv.org/content/10.1101/2023.01.12.523851v2" target="_blank">biorxiv</a>)
       (<a href="https://github.com/shuxiaoc/maxfuse" target="_blank">code: method</a>)
