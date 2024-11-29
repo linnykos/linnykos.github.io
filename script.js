@@ -1,7 +1,9 @@
 const websiteLinks = {
     joonyong_an: "https://joonanlab.github.io/team/joonan.html",
+    orlando_miranda: "https://sites.google.com/ncsu.edu/miranda-lab-ncsu/home",
     shuxiao_chen: "https://sxc.moe/",
     li_chen: "https://biostat.ufl.edu/profile/chen-li-1/",
+    yenchi_chen: "https://faculty.washington.edu/yenchic/",
     bernie_devlin: "https://devlinbj.github.io/",
     anjalie_field: "https://anjalief.github.io/",
     peter_freeman: "http://www.stat.cmu.edu/~pfreeman/",
