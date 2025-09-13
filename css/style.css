@@ -165,3 +165,13 @@ ul#news li {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
+.alumni-list {
+  margin: 0;
+  padding-left: 1.2rem;           /* indent for bullets */
+  list-style: disc outside;
+}
+.alumni-list li {
+  margin: 0.25rem 0;              /* tighter vertical spacing */
+  line-height: 1.3;
+}
