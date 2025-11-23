@@ -5,6 +5,7 @@ const websiteLinks = {
     li_chen: "https://biostat.ufl.edu/profile/chen-li-1/",
     yenchi_chen: "https://faculty.washington.edu/yenchic/",
     bernie_devlin: "https://devlinbj.github.io/",
+    turbo_du: "https://turbodu222.github.io/",
     anjalie_field: "https://anjalief.github.io/",
     peter_freeman: "http://www.stat.cmu.edu/~pfreeman/",
     gwenn_garden: "https://www.med.unc.edu/neurology/directory/gwenn-a-garden-md-phd/",
@@ -33,6 +34,7 @@ const websiteLinks = {
     stephan_sanders: "https://sanderslab.github.io/team/stephansanders",
     chad_schafer: "http://www.stat.cmu.edu/~cschafer/",
     james_sharpnack: "https://jsharpna.github.io/",
+    ali_shojaie: "https://faculty.washington.edu/ashojaie/",
     michael_snyder: "https://med.stanford.edu/snyderlab.html",
     wei_sun: "https://research.fredhutch.org/sun/en.html",
     michael_talkowski: "https://talkowski.mgh.harvard.edu/",
@@ -49,8 +51,7 @@ const websiteLinks = {
     jingnan_zhang: "https://www.sta.cuhk.edu.hk/peoples/zhang-jingnan/",
     nancy_zhang: "https://nzhanglab.github.io/",
     zifeng_zhao: "https://sites.google.com/view/zifengzhao/",
-    lingxue_zhu: "https://lingxuez.github.io/",
-    // journals below
+    lingxue_zhu: "https://lingxuez.github.io/"
 };
 
 const links = document.querySelectorAll(".link");
