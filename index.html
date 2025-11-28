@@ -130,14 +130,14 @@
   <img class="project_img" src="images/plot-geoadvae.png">
   <div class="right">
   <div class="research_title">
-  Diagonal integration of neural cell's morphology and transcriptomics
+  GeoAdvAE: Diagonal integration of neural cell's morphology and transcriptomics
   </div>
   <p>
  A cell's morphology is a powerful readout of a cell's function and state.
  While microscopy allows us to study neural cells' morphology, and single-nuclei RNA-sequencing allows us to study a cell's transcriptomics,
  these two rich data sources are often performed on separate cells due to technological limitations.
  This obstructs us from understanding how a neural cell's transcriptomics modulates or responds to changes in its morphology.
- We develop GeoAdvAE, a deep-learning diagonal integration method, to overcome this technological limitation.
+ We develop a deep-learning diagonal integration method, to overcome this technological limitation.
  We validate our method on Patch-seq neurons and study genes that control microglial morphology from the 5xFAD mouse model for Alzheimer's disease.
   </p>
   </div>
@@ -158,17 +158,17 @@
   <img class="project_img" src="images/plot-clonotrace.png">
   <div class="right">
   <div class="research_title">
-  Fate bias and pseudotime from joint modeling of single-cell lineage barcode and transcriptomics
+  Clonotrace: Fate bias and pseudotime from joint modeling of single-cell lineage barcode and transcriptomics
   </div>
   <p>
  Single-cell technologies now measure both gene expression and clonal ancestry, 
  but most analysis tools still treat these modalities separately. 
- We develop Clonotrace, a framework that clusters clones by their "clonotype profiles"
+ We develop a framework that clusters clones by their "clonotype profiles"
  (the distributions of their cells across transcriptomic space) to jointly model lineage and 
  expression and recover cell-state transitions and fate biases. 
  Applied to simulated and experimental systems including hematopoiesis, cancer 
  drug resistance models, and CD8 T cells from glioblastoma and immunotherapy cohorts, 
- Clonotrace reconstructs temporal order across abrupt transcriptional shifts, 
+ our method reconstructs temporal order across abrupt transcriptional shifts, 
  distinguishes unipotent from multipotent progenitors, and uncovers subtle, 
  recurrent fate-divergent T cell programs. 
   </p>
@@ -241,7 +241,7 @@
   Mother-daughter inheritance in cell-cycling
   </div>
   <p>
- Cells can undergo asymmetric cell division, and in certain systems, the fate of the daughter cell can be predicted even before it buds from the mother cell. However, it is not well understood what exactly is inherited by the daughter cell. We study budding yeast cells via live-cell microscopy to study the protein-protein regulatory network of mother cells and their daughter cells as time series, and develop a framework based on ODE regulatory networks to estimate the the precentage a daughter cell inherits its protein-protein regulatory network from its mother at single-cell resolution.
+  ODEinherit: Cells can undergo asymmetric cell division, and in certain systems, the fate of the daughter cell can be predicted even before it buds from the mother cell. However, it is not well understood what exactly is inherited by the daughter cell. We study budding yeast cells via live-cell microscopy to study the protein-protein regulatory network of mother cells and their daughter cells as time series, and develop a framework based on ODE regulatory networks to estimate the the precentage a daughter cell inherits its protein-protein regulatory network from its mother at single-cell resolution.
   </p>
   </div>
   </div>
@@ -265,7 +265,7 @@
  Replicate coherence in RNA velocity via count splitting
   </div>
   <p>
- RNA velocity has been a transformative tool to study development biology via single-cell RNA sequencing. However, although many RNA velocity methods exist, it is common for many methods to conflict in the biological interpretation of the results. We develop a method called replicate coherence to quantify the uncertainty in the RNA velocity vectors where we use the count-splitting framework to emulate having two technical replicates of the same exact cells. This allows us to quantify how much uncertainty each RNA velocity result has, which enables a more accurate side-by-side comparison of different methods for the scRNA-seq dataset at hand.
+  Replicat coherence: RNA velocity has been a transformative tool to study development biology via single-cell RNA sequencing. However, although many RNA velocity methods exist, it is common for many methods to conflict in the biological interpretation of the results. We develop a method called replicate coherence to quantify the uncertainty in the RNA velocity vectors where we use the count-splitting framework to emulate having two technical replicates of the same exact cells. This allows us to quantify how much uncertainty each RNA velocity result has, which enables a more accurate side-by-side comparison of different methods for the scRNA-seq dataset at hand.
   </p>
   </div>
   </div>
@@ -288,7 +288,7 @@ replicates using count splitting<br>
   <img class="project_img" src="images/plot-lcl.png">
   <div class="right">
   <div class="research_title">
-  Lineage-aware contrastive learning
+  LCL: Lineage-aware contrastive learning
   </div>
   <p>
   In static lineage-barcoding single-cell sequencing, we measure both each cell's gene expression and its ancestry in order to gain insights into a cell's fate. However, there lack methods to identify which genes separate the cells by their lineages. In this work, we develop a deep-learning architecture based on contrastive learning to isolate the information in the gene expression that recapitulates cells' lineages. We use the lineage barcoe as the premise of our data augmentation mechanism. This strategy enables us to better identify the genes driving fate commitment and cells' fate boundaries.
@@ -311,7 +311,7 @@ replicates using count splitting<br>
   <img class="project_img" src="images/plot-dynamicsbm.png">
   <div class="right">
   <div class="research_title">
-  Dynamic stochastic block models
+  KD-SoS: Dynamic stochastic block models
   </div>
   <p>
   In genomics, we often observe a sequence of graphs over some notion of time, such as the gene network
