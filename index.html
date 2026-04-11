@@ -93,7 +93,11 @@
         
         <p>
         <span class="emph">Funding</span>: It is my honor to be funded by the 
-        <a href="https://www.washington.edu/research/or/royalty-research-fund-rrf/" target="_blank">UW Royalty Research Fund</a> (2024-25) as a pilot grant to support the lab.
+        <a href="https://reporter.nih.gov/search/ESM88rQDtEe3DpK5NnVuVw/project-details/11267767" target="_blank">NIGMS R35</a> (2026-31)
+        and the
+        <a href="https://depts.washington.edu/mbwc/adrc/page/development-project-awards" target="_blank">UW ADRC</a> (2026-27)
+        to support the lab.
+        See <a href="funding.html">our lab's past funding/awards</a>.
         </p>
         
         <p>
@@ -124,31 +128,32 @@
 <div class="subtitle">Preprints/In Preparation</div>
 (Bold denotes members of or closely associated with the Lin Lab.)
 
-<!-- GeoAdvAE -->
+<!-- SCOPE -->
 <div class="block">
   <div class="abstract">
-  <img class="project_img" src="images/plot-geoadvae.png">
+  <img class="project_img" src="images/plot-scope.png">
   <div class="right">
   <div class="research_title">
-  GeoAdvAE: Diagonal integration of neural cell's morphology and transcriptomics
+  SCOPE: Localizing fate-decision states and their regulatory drivers in single-cell differentiation
   </div>
   <p>
- A cell's morphology is a powerful readout of a cell's function and state.
- While microscopy allows us to study neural cells' morphology, and single-nuclei RNA-sequencing allows us to study a cell's transcriptomics,
- these two rich data sources are often performed on separate cells due to technological limitations.
- This obstructs us from understanding how a neural cell's transcriptomics modulates or responds to changes in its morphology.
- We develop a deep-learning diagonal integration method, to overcome this technological limitation.
- We validate our method on Patch-seq neurons and study genes that control microglial morphology from the 5xFAD mouse model for Alzheimer's disease.
+  Defining the discrete boundaries of lineage commitment and the timing of regulatory priming remains a significant challenge in developmental biology.
+  We present SCOPE (Semi-supervised Conformal Prediction), a framework that leverages conformal inference to transform high-dimensional single-cell measurements into rigorous, discrete prediction sets of all plausible future fates. 
+  By formalizing fate uncertainty with distribution-free coverage guarantees, SCOPE localizes transcriptomic branchpoints and identifies windows of epigenetic priming where chromatin accessibility foreshadows gene expression. 
+  We demonstrate its utility across mouse hematopoiesis and human retinogenesis, identifying key transcription factor drivers that define the onset of lineage specification.
   </p>
   </div>
   </div>
   <div class="publication">
-    <span class="emph"><a class="link" href="" target="_blank" data-link="turbo_du">J. T. Du</a></span>,
+    <span class="emph"><a class="link" href="" target="_blank" data-link="yimin_zhao">Y. Zhao</a></span>,
+    <a class="link" href="" target="_blank" data-link="connor_finkbeiner">C. Finkbeiner</a>,
+    <a class="link" href="" target="_blank" data-link="manu_setty">M. Setty</a>, and
     <span class="emph">K. Z. Lin</span>.
   <br>
-  Integrating morphology and gene expression of neural cells in unpaired single-cell data using GeoAdvAE<br>
-  2025: (<a href="https://www.biorxiv.org/content/10.1101/2025.11.19.689368v2" target="_blank">biorxiv</a>)
-  (<a href="https://github.com/turbodu222/GeoAdVAE" target="_blank">code: method and analysis</a>)
+  SCOPE: Localizing fate-decision states and their regulatory drivers in single-cell differentiation<br>
+  2026: 
+  (<a href="https://www.biorxiv.org/content/10.64898/2026.04.07.717037v1" target="_blank">biorxiv</a>)
+  (<a href="https://github.com/YiminZhao97/SCOPE" target="_blank">code: method and analysis</a>)
   </div>
 </div>
 
@@ -256,32 +261,6 @@
   </div>
 </div>
 
-<!-- Replicate -->
-<div class="block">
-  <div class="abstract">
-  <img class="project_img" src="images/plot-replicate.png">
-  <div class="right">
-  <div class="research_title">
- Replicate coherence: Replicate coherence in RNA velocity via count splitting
-  </div>
-  <p>
-  RNA velocity has been a transformative tool to study development biology via single-cell RNA sequencing. However, although many RNA velocity methods exist, it is common for many methods to conflict in the biological interpretation of the results. We develop a method called replicate coherence to quantify the uncertainty in the RNA velocity vectors where we use the count-splitting framework to emulate having two technical replicates of the same exact cells. This allows us to quantify how much uncertainty each RNA velocity result has, which enables a more accurate side-by-side comparison of different methods for the scRNA-seq dataset at hand.
-  </p>
-  </div>
-  </div>
-  <div class="publication">
-    <span class="emph">Y. Li</span>,
-    Z. J. Wei,
-    <a class="link" href="" target="_blank" data-link="yenchi_chen">Y.-C. Chen</a>, and <span class="emph">K. Z. Lin</span>.
-  <br>
-  Assessing RNA velocity stability across synthetic
-replicates using count splitting<br>
-  2024: (<a href="https://www.biorxiv.org/content/10.1101/2024.11.23.625009v2" target="_blank">biorxiv</a>)
-  (<a href="https://github.com/linnykos/veloUncertainty" target="_blank">code: method and analysis</a>)
-  </div>
-</div>
-
-
 <!-- LCL -->
 <div class="block">
   <div class="abstract">
@@ -312,6 +291,58 @@ replicates using count splitting<br>
 
 <div class="subtitle">Published papers</div>
 
+<!-- Replicate -->
+<div class="block">
+  <div class="abstract">
+  <img class="project_img" src="images/plot-replicate.png">
+  <div class="right">
+  <div class="research_title">
+ Replicate coherence: Replicate coherence in RNA velocity via count splitting
+  </div>
+  <p>
+  RNA velocity has been a transformative tool to study development biology via single-cell RNA sequencing. However, although many RNA velocity methods exist, it is common for many methods to conflict in the biological interpretation of the results. We develop a method called replicate coherence to quantify the uncertainty in the RNA velocity vectors where we use the count-splitting framework to emulate having two technical replicates of the same exact cells. This allows us to quantify how much uncertainty each RNA velocity result has, which enables a more accurate side-by-side comparison of different methods for the scRNA-seq dataset at hand.
+  </p>
+  </div>
+  </div>
+  <div class="publication">
+    <span class="emph">Y. Li</span>,
+    Z. J. Wei,
+    <a class="link" href="" target="_blank" data-link="yenchi_chen">Y.-C. Chen</a>, and <span class="emph">K. Z. Lin</span>.
+  <br>
+  Quantifying stability via count splitting to guide model selection in RNA velocity analyses<br>
+  <a href="https://academic.oup.com/bioinformaticsadvances" target="_blank">Bioinformatics Advances</a>: To be published (<a href="https://www.biorxiv.org/content/10.1101/2024.11.23.625009v3" target="_blank">biorxiv</a>) (<a href="https://github.com/linnykos/veloUncertainty" target="_blank">code: method and analysis</a>)
+  </div>
+</div>
+
+
+<!-- GeoAdvAE -->
+<div class="block">
+  <div class="abstract">
+  <img class="project_img" src="images/plot-geoadvae.png">
+  <div class="right">
+  <div class="research_title">
+  GeoAdvAE: Diagonal integration of neural cell's morphology and transcriptomics
+  </div>
+  <p>
+ A cell's morphology is a powerful readout of a cell's function and state.
+ While microscopy allows us to study neural cells' morphology, and single-nuclei RNA-sequencing allows us to study a cell's transcriptomics,
+ these two rich data sources are often performed on separate cells due to technological limitations.
+ This obstructs us from understanding how a neural cell's transcriptomics modulates or responds to changes in its morphology.
+ We develop a deep-learning diagonal integration method, to overcome this technological limitation.
+ We validate our method on Patch-seq neurons and study genes that control microglial morphology from the 5xFAD mouse model for Alzheimer's disease.
+  </p>
+  </div>
+  </div>
+  <div class="publication">
+    <span class="emph"><a class="link" href="" target="_blank" data-link="turbo_du">J. T. Du</a></span>,
+    <span class="emph">K. Z. Lin</span>.
+  <br>
+  Integrating morphology and gene expression of neural cells in unpaired single-cell data using GeoAdvAE<br>
+  <a href="https://recomb.org/proceedings/proceedings/2030-2026/2026/" target="_blank">RECOMB Proceedings 2026</a>: (<a href="https://www.biorxiv.org/content/10.1101/2025.11.19.689368v2" target="_blank">link</a>) (<a href="https://github.com/turbodu222/GeoAdVAE" target="_blank">code: method and analysis</a>)
+  </div>
+</div>
+
+
 <!-- dynamic SBM -->
 <div class="block">
   <div class="abstract">
@@ -336,7 +367,42 @@ replicates using count splitting<br>
   <a class="link" href="" target="_blank" data-link="jing_lei">J. Lei</a>.
   <br>
   Dynamic clustering for heterophilic stochastic block models with time-varying node memberships<br>
-  <a href="https://academic.oup.com/biomet" target="_blank">Biometrika</a>: To be published (<a href="https://arxiv.org/abs/2403.05654" target="_blank">arxiv</a>)  (<a href="https://github.com/linnykos/dynamicGraphRoot" target="_blank">code: method and analysis</a>)
+  <a href="https://academic.oup.com/biomet" target="_blank">Biometrika</a>: To be published 
+  (<a href="https://academic.oup.com/biomet/advance-article/doi/10.1093/biomet/asag018/8533255" target="_blank">link</a>) 
+  (<a href="https://arxiv.org/abs/2403.05654" target="_blank">arxiv</a>)  
+  (<a href="https://github.com/linnykos/dynamicGraphRoot" target="_blank">code: method and analysis</a>)
+  </div>
+</div>
+
+<div class="block">
+  <div class="abstract">
+  <img class="project_img" src="images/plot-multiresistance.png">
+  <div class="right">
+  <div class="research_title">
+  Pre-existing cell states predict resistance to multiple treatments
+  </div>
+  <p>
+  While resistance to single cancer treatments is well-documented, clinical failure often involves multiple therapeutic modalities. 
+  We developed a multi-treatment, high-throughput clonal tracking framework paired with single-cell RNA sequencing to monitor melanoma clones across parallel treatment conditions. 
+  We discovered rare "generalist" clones that survive multiple diverse treatments and identified pre-treatment CD44 expression as a marker for multi-treatment resistance. 
+  Our results demonstrate that initial differentiation states drive divergent transcriptional paths toward resistance, providing a framework for mapping how pre-existing cellular heterogeneity dictates complex therapeutic outcomes.
+  </p>
+  </div>
+  </div>
+  <div class="publication">
+    <a class="link" href="" target="_blank" data-link="dylan_schaff">D. L. Schaff</a>,
+    P. E. White,
+    C. J. Cote,
+    G. E. Watterson,
+    <span class="emph">K. Z. Lin</span>,
+    A. J. Fasse,
+    <a class="link" href="" target="_blank" data-link="nancy_zhang">N. R. Zhang</a>, and
+    <a class="link" href="" target="_blank" data-link="sydney_shaffer">S. Shaffer</a>.
+  <br>
+  Pre-existing cell states predict resistance to multiple treatments<br>
+  <a href="https://www.cell.com/cell-genomics/home" target="_blank">Cell Genomics</a> 6 (2026): To be published
+  (<a href="https://www.cell.com/cell-genomics/fulltext/S2666-979X(26)00053-4" target="_blank">link</a>)
+  (<a href="https://github.com/SydShafferLab/BarcodeAnalysis" target="_blank">code</a>)
   </div>
 </div>
 

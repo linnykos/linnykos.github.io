@@ -8,6 +8,7 @@ const websiteLinks = {
     bernie_devlin: "https://devlinbj.github.io/",
     turbo_du: "https://turbodu222.github.io/",
     anjalie_field: "https://anjalief.github.io/",
+    connor_finkbeiner: "https://scholar.google.com/citations?user=mtXfh8sAAAAJ&hl=en&oi=ao",
     peter_freeman: "http://www.stat.cmu.edu/~pfreeman/",
     yuntian_fu: "https://scholar.google.com/citations?user=DCTaAgsAAAAJ",
     gwenn_garden: "https://www.med.unc.edu/neurology/directory/gwenn-a-garden-md-phd/",
@@ -61,6 +62,7 @@ const websiteLinks = {
     jessica_young: "https://www.younglaboratory.com/",
     jingnan_zhang: "https://www.sta.cuhk.edu.hk/peoples/zhang-jingnan/",
     nancy_zhang: "https://nzhanglab.github.io/",
+    yimin_zhao: "https://scholar.google.com/citations?user=Nu3aGxUAAAAJ&hl=en&oi=ao",
     zifeng_zhao: "https://sites.google.com/view/zifengzhao/",
     lingxue_zhu: "https://lingxuez.github.io/"
 };
