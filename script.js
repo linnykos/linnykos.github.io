@@ -24,6 +24,7 @@ const websiteLinks = {
     jing_lei: "http://www.stat.cmu.edu/~jinglei/",
     gen_li: "https://sites.google.com/view/ligen",
     ziyi_li: "https://ziyili20.github.io/",
+    yifan_lin: "https://www.linkedin.com/in/yifan-lin-82a051165/?locale=en",
     han_liu: "http://magics.cs.northwestern.edu/index.html",
     sainath_mamde: "https://www.linkedin.com/in/sainath-mamde-539138110/",
     divij_mathew: "https://www.linkedin.com/in/divijmathew/",
