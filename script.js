@@ -28,6 +28,7 @@ const websiteLinks = {
     han_liu: "http://magics.cs.northwestern.edu/index.html",
     sainath_mamde: "https://www.linkedin.com/in/sainath-mamde-539138110/",
     divij_mathew: "https://www.linkedin.com/in/divijmathew/",
+    manu_setty: "https://research.fredhutch.org/setty/en.html",
     orlando_miranda: "https://sites.google.com/ncsu.edu/miranda-lab-ncsu/home",
     zongming_ma: "https://zmastat.github.io/",
     shubhabrata_mukherjee: "https://faculty.washington.edu/smukherj/index.html",
@@ -71,5 +72,12 @@ const websiteLinks = {
 const links = document.querySelectorAll(".link");
 links.forEach(link => {
     const linkKey = link.getAttribute("data-link");
-    link.href = websiteLinks[linkKey];
+    const url = websiteLinks[linkKey];
+    if (url) {
+        link.href = url;
+    } else {
+        // No URL for this key: leave as plain text instead of a broken "undefined" link.
+        link.removeAttribute("href");
+        console.warn("No website link defined for data-link key:", linkKey);
+    }
 });

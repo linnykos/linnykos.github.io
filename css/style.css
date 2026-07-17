@@ -17,6 +17,8 @@ body {
 #main {
   clear: both;
   width: 900px;
+  max-width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
   margin-top: 30px;
   background: rgba(255,255,255, 1);
@@ -33,6 +35,8 @@ body {
 }
 #header {
   width: 900px;
+  max-width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
   position: relative;
   color: white;
@@ -52,7 +56,7 @@ body {
   right: 10px;
   bottom: 5px;
 }
-#navigator a:link, #navigator a:visited,  {
+#navigator a:link, #navigator a:visited {
   text-decoration: none;
 }
 #selfie {
@@ -174,4 +178,39 @@ ul#news li {
 .alumni-list li {
   margin: 0.25rem 0;              /* tighter vertical spacing */
   line-height: 1.3;
+}
+
+/* Small screens: stack the banner and let floated images go full-width
+   so the fixed 900px desktop layout scales down to phones. */
+@media (max-width: 600px) {
+  .banner {
+    height: auto;
+  }
+  #name {
+    width: auto;
+    font-size: 22px;
+    padding-right: 10px;
+  }
+  #navigator {
+    position: static;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  .nav_cell {
+    font-size: 16px;
+    padding: 0 6px;
+  }
+  #selfie {
+    float: none;
+    margin: 0 auto 15px auto;
+    text-align: center;
+  }
+  .project_img {
+    float: none;
+    display: block;
+    margin: 0 auto 15px auto;
+    width: 100%;
+    max-width: 300px;
+  }
 }

@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kevin Z. Lin, UW Biostatistics</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 	<meta name="google-site-verification" content="_icP2W3B6y_gFG92Dh-caUWIh_sEnE4tPu8pghzaH2w" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
 	$(document).ready(function(){
 	  $("a").on('click', function(event) {
@@ -50,7 +50,7 @@
       <a class="anchor" id="about"></a>
       <div class="introduction">
         <div id="selfie">
-          <img src="images/selfie.png" /><br>
+          <img src="images/selfie.png" alt="Kevin Z. Lin" /><br>
           <div style="text-align: center; margin-top: 10px; font-size: 12px; font-family: monospace;">kzlin [at] uw.edu</div>
           <div style="text-align: center; margin-top: 10px; font-size: 12px; font-family: monospace;">(206) 685-8334</div>
           <div style="text-align: center; margin-top: 10px; font-size: 12px; font-family: monospace;">Office: 338 HRC</div>
@@ -126,7 +126,7 @@
 <!-- SCOPE -->
 <div class="block">
   <div class="abstract">
-  <img class="project_img" src="images/plot-scope.png">
+  <img class="project_img" src="images/plot-scope.png" alt="SCOPE method figure">
   <div class="right">
   <div class="research_title">
   SCOPE: Localizing fate-decision states and their regulatory drivers in single-cell differentiation
@@ -155,7 +155,7 @@
 <!-- Clonotrace -->
 <div class="block">
   <div class="abstract">
-  <img class="project_img" src="images/plot-clonotrace.png">
+  <img class="project_img" src="images/plot-clonotrace.png" alt="Clonotrace method figure">
   <div class="right">
   <div class="research_title">
   Clonotrace: Fate bias and pseudotime from joint modeling of single-cell lineage barcode and transcriptomics
@@ -194,10 +194,10 @@
 <!-- ePRS -->
 <div class="block">
   <div class="abstract">
-  <img class="project_img" src="images/plot-eprs.png">
+  <img class="project_img" src="images/plot-eprs.png" alt="Endolysosomal ePRS study figure">
   <div class="right">
   <div class="research_title">
-  Enndolysosomal dysfunction across neural cells in AD
+  Endolysosomal dysfunction across neural cells in AD
   </div>
   <p>
  It is unclear whether how genetic variants linked to Alzheimer’s disease (AD) like the endolysosomal network (ELN) cause functional disruptions in the brain.
@@ -235,13 +235,13 @@
 <!-- ODE -->
 <div class="block">
   <div class="abstract">
-  <img class="project_img" src="images/plot-ode.png">
+  <img class="project_img" src="images/plot-ode.png" alt="ODEinherit method figure">
   <div class="right">
   <div class="research_title">
   ODEinherit: Mother-daughter inheritance in cell-cycling
   </div>
   <p>
-  Cells can undergo asymmetric cell division, and in certain systems, the fate of the daughter cell can be predicted even before it buds from the mother cell. However, it is not well understood what exactly is inherited by the daughter cell. We study budding yeast cells via live-cell microscopy to study the protein-protein regulatory network of mother cells and their daughter cells as time series, and develop a framework based on ODE regulatory networks to estimate the the precentage a daughter cell inherits its protein-protein regulatory network from its mother at single-cell resolution.
+  Cells can undergo asymmetric cell division, and in certain systems, the fate of the daughter cell can be predicted even before it buds from the mother cell. However, it is not well understood what exactly is inherited by the daughter cell. We study budding yeast cells via live-cell microscopy to study the protein-protein regulatory network of mother cells and their daughter cells as time series, and develop a framework based on ODE regulatory networks to estimate the percentage a daughter cell inherits its protein-protein regulatory network from its mother at single-cell resolution.
   </p>
   </div>
   </div>
@@ -266,7 +266,7 @@
 
 <div class="block">
   <div class="abstract">
-  <img class="project_img" src="images/plot-sensgan.png">
+  <img class="project_img" src="images/plot-sensgan.png" alt="sensGAN method figure">
   <div class="right">
   <div class="research_title">
   High-dimensional sensitivity Analysis for learning worst-case latent confounders
@@ -296,19 +296,19 @@
 <!-- LCL -->
 <div class="block">
   <div class="abstract">
-  <img class="project_img" src="images/plot-lcl.png">
+  <img class="project_img" src="images/plot-lcl.png" alt="Lineage-aware contrastive learning figure">
   <div class="right">
   <div class="research_title">
   LCL: Lineage-aware contrastive learning
   </div>
   <p>
-  In static lineage-barcoding single-cell sequencing, we measure both each cell's gene expression and its ancestry in order to gain insights into a cell's fate. However, there lack methods to identify which genes separate the cells by their lineages. In this work, we develop a deep-learning architecture based on contrastive learning to isolate the information in the gene expression that recapitulates cells' lineages. We use the lineage barcoe as the premise of our data augmentation mechanism. This strategy enables us to better identify the genes driving fate commitment and cells' fate boundaries.
+  In static lineage-barcoding single-cell sequencing, we measure both each cell's gene expression and its ancestry in order to gain insights into a cell's fate. However, there lack methods to identify which genes separate the cells by their lineages. In this work, we develop a deep-learning architecture based on contrastive learning to isolate the information in the gene expression that recapitulates cells' lineages. We use the lineage barcode as the premise of our data augmentation mechanism. This strategy enables us to better identify the genes driving fate commitment and cells' fate boundaries.
   </p>
   </div>
   </div>
   <div class="publication">
    <span class="emph"><a class="link" href="" target="_blank" data-link="joshua_yang">S. J. Yang</a></span>,
-   <a class="link" href="" target="_blank" data-link="yixin_wangi">Y. Wang</a>, and 
+   <a class="link" href="" target="_blank" data-link="yixin_wang">Y. Wang</a>, and
    <span class="emph">K. Z. Lin</span>.
   <br>
   Leveraging lineage barcodes as natural augmentations for contrastive learning of cell fate in scRNA-seq data<br>
@@ -324,7 +324,7 @@
 <!-- Replicate -->
 <div class="block">
   <div class="abstract">
-  <img class="project_img" src="images/plot-replicate.png">
+  <img class="project_img" src="images/plot-replicate.png" alt="Replicate coherence method figure">
   <div class="right">
   <div class="research_title">
  Replicate coherence: Replicate coherence in RNA velocity via count splitting
@@ -350,7 +350,7 @@
 <!-- GeoAdvAE -->
 <div class="block">
   <div class="abstract">
-  <img class="project_img" src="images/plot-geoadvae.png">
+  <img class="project_img" src="images/plot-geoadvae.png" alt="GeoAdvAE method figure">
   <div class="right">
   <div class="research_title">
   GeoAdvAE: Diagonal integration of neural cell's morphology and transcriptomics
@@ -378,7 +378,7 @@
 <!-- dynamic SBM -->
 <div class="block">
   <div class="abstract">
-  <img class="project_img" src="images/plot-dynamicsbm.png">
+  <img class="project_img" src="images/plot-dynamicsbm.png" alt="KD-SoS dynamic stochastic block model figure">
   <div class="right">
   <div class="research_title">
   KD-SoS: Dynamic stochastic block models
@@ -408,7 +408,7 @@
 
 <div class="block">
   <div class="abstract">
-  <img class="project_img" src="images/plot-multiresistance.png">
+  <img class="project_img" src="images/plot-multiresistance.png" alt="Multi-treatment resistance study figure">
   <div class="right">
   <div class="research_title">
   Pre-existing cell states predict resistance to multiple treatments
@@ -441,7 +441,7 @@
 <!-- Glia -->
 <div class="block">
   <div class="abstract">
-  <img class="project_img" src="images/plot-glia.png">
+  <img class="project_img" src="images/plot-glia.png" alt="Single-cell glia review figure">
   <div class="right">
   <div class="research_title">
   Single-cell analysis review in glial cells
@@ -469,7 +469,7 @@
 <!-- eSVD-de -->
 <div class="block">
   <div class="abstract">
-    <img class="project_img" src="images/plot-esvd-de.png">
+    <img class="project_img" src="images/plot-esvd-de.png" alt="eSVD-DE method figure">
     <div class="right">
       <div class="research_title">
        eSVD-DE: Differential expression in multi-individual scRNA data
@@ -505,7 +505,7 @@
    <!-- maxfuse -->
 <div class="block">
       <div class="abstract">
-        <img class="project_img" src="images/plot-maxfuse.png">
+        <img class="project_img" src="images/plot-maxfuse.png" alt="MaxFuse method figure">
         <div class="right">
           <div class="research_title">
             MaxFuse: Diagonal integration of single-cell sequencing data
@@ -526,7 +526,7 @@ and surface-antibody data, as well as scRNA-seq data with spatial proteomic data
         S. Huang,
         J. W. Hickey,
         <span class="emph">K. Z. Lin</span>,
-        <a class="link" href="" target="_blank" data-link="shuxiao_chen">M. Snyder</a>,
+        <a class="link" href="" target="_blank" data-link="michael_snyder">M. Snyder</a>,
         <a class="link" href="" target="_blank" data-link="willaim_greenleaf">W. J. Greenleaf</a>,
         <a class="link" href="" target="_blank" data-link="garry_nolan">G. P. Nolan</a>,
         <a class="link" href="" target="_blank" data-link="nancy_zhang">N. R. Zhang</a>, and
@@ -545,7 +545,7 @@ and surface-antibody data, as well as scRNA-seq data with spatial proteomic data
 <!-- tilted-cca -->
 <div class="block">
   <div class="abstract">
-    <img class="project_img" src="images/plot-tcca.png">
+    <img class="project_img" src="images/plot-tcca.png" alt="Tilted-CCA method figure">
     <div class="right">
       <div class="research_title">
        Tilted-CCA: Disentangling common/distinct information from paired multiomic single-cell data
@@ -585,7 +585,7 @@ and surface-antibody data, as well as scRNA-seq data with spatial proteomic data
       <!-- sosd -->
 <div class="block">
         <div class="abstract">
-          <img class="project_img" src="images/plot-sosd.png">
+          <img class="project_img" src="images/plot-sosd.png" alt="NetworkSoSD method figure">
           <div class="right">
             <div class="research_title">
              NetworkSoSD: Bias-adjusted spectral embedding for multi-layer networks
@@ -627,7 +627,7 @@ and surface-antibody data, as well as scRNA-seq data with spatial proteomic data
 <!-- singlecell -->
 <div class="block">
         <div class="abstract">
-          <img class="project_img" src="images/plot-singlecell.png">
+          <img class="project_img" src="images/plot-singlecell.png" alt="eSVD method figure">
           <div class="right">
             <div class="research_title">
              eSVD: Exponential-family embedding for cell developmental trajectories
@@ -658,7 +658,7 @@ and surface-antibody data, as well as scRNA-seq data with spatial proteomic data
 
 <div class="block">
    <div class="abstract">
-     <img class="project_img" src="images/plot-science.png">
+     <img class="project_img" src="images/plot-science.png" alt="Autism noncoding genome study figure">
      <div class="right">
        <div class="research_title">
          Autism risk factors within the noncoding genome
@@ -709,7 +709,7 @@ and surface-antibody data, as well as scRNA-seq data with spatial proteomic data
 <!-- destin2 -->
 <div class="block">
    <div class="abstract">
-     <img class="project_img" src="images/plot-destin2.png">
+     <img class="project_img" src="images/plot-destin2.png" alt="Destin2 method figure">
      <div class="right">
        <div class="research_title">
          Destin2: Unifying peaks, motifs and activity in single-cell ATAC-seq
@@ -740,13 +740,13 @@ and surface-antibody data, as well as scRNA-seq data with spatial proteomic data
 
 <div class="block">
    <div class="abstract">
-     <img class="project_img" src="images/plot-wiki.png">
+     <img class="project_img" src="images/plot-wiki.png" alt="Wikipedia social bias study figure">
      <div class="right">
        <div class="research_title">
          Social biases in Wikipedia biographies
        </div>
        <p> Social biases can influence Wikipedia articles of individuals
-       across different genders and ethnicities that result in disproportiate
+       across different genders and ethnicities that result in disproportionate
        article lengths, number of languages written about said individuals, etc.,
        but these differences can be difficult to quantify appropriately.
        In this paper, we develop a matching method to find an appropriate
@@ -773,7 +773,7 @@ and surface-antibody data, as well as scRNA-seq data with spatial proteomic data
 <!-- cpreg -->
 <div class="block">
         <div class="abstract">
-          <img class="project_img" src="images/plot-cpreg.png">
+          <img class="project_img" src="images/plot-cpreg.png" alt="VPWBS changepoint regression figure">
           <div class="right">
             <div class="research_title">
               VPWBS: Changepoint detection in high-dimensional regression
@@ -804,7 +804,7 @@ localization in regression settings<br>
 <!-- binseg -->
 <div class="block">
         <div class="abstract">
-          <img class="project_img" src="images/plot-binseg.png">
+          <img class="project_img" src="images/plot-binseg.png" alt="Changepoint post-selection inference figure">
           <div class="right">
             <div class="research_title">
               Post-selection inference for changepoint problems
@@ -836,7 +836,7 @@ localization in regression settings<br>
 <!-- brainspan -->
 <div class="block">
         <div class="abstract">
-          <img class="project_img" src="images/plot-brainspan.png">
+          <img class="project_img" src="images/plot-brainspan.png" alt="Covariance-based sample selection figure">
           <div class="right">
             <div class="research_title">
               Covariance-based sample selection for heterogeneous data
@@ -863,7 +863,7 @@ localization in regression settings<br>
 <!-- ecv -->
 <div class="block">
         <div class="abstract">
-          <img class="project_img" src="images/plot-ecv.png">
+          <img class="project_img" src="images/plot-ecv.png" alt="Network cross-validation discussion figure">
           <div class="right">
             <div class="research_title">
              Discussion paper: Network cross validation (Li et. al, 2020)
@@ -892,7 +892,7 @@ localization in regression settings<br>
 <!-- fused lasso -->
 <div class="block">
         <div class="abstract">
-          <img class="project_img" src="images/plot-fused.png">
+          <img class="project_img" src="images/plot-fused.png" alt="Fused lasso method figure">
           <div class="right">
             <div class="research_title">
               Fused lasso and changepoint screening
@@ -918,7 +918,7 @@ localization in regression settings<br>
 <!-- cs -->
 <div class="block">
         <div class="abstract">
-          <img class="project_img" src="images/plot-cs.png">
+          <img class="project_img" src="images/plot-cs.png" alt="Compressed sensing method figure">
           <div class="right">
             <div class="research_title">
               Compressed sensing
@@ -952,7 +952,7 @@ of simplex and sparsification methods<br>
   <div class="block">
     <div class="abstract">
         <div class="application_title">
-      We, the millenials: The statistical significance of political significance
+      We, the millennials: The statistical significance of political significance
         </div>
      <div class="publication">
          <i><a href="https://www.significancemagazine.com/" target="_blank">Significance</a></i> (2017)
@@ -964,8 +964,8 @@ of simplex and sparsification methods<br>
     <hr>
 
   <div style="margin-top: 10px; text-align: center; font-size: 14px;">
-  Copyright &copy; 2015 - 2025, Kevin Lin. All rights reserved.<br>
-  Last Updated: September 13, 2025
+  Copyright &copy; 2015 - 2026, Kevin Lin. All rights reserved.<br>
+  Last Updated: July 17, 2026
   </div>
 
 <script src="script.js"></script>
