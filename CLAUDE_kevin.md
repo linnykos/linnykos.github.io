@@ -21,8 +21,24 @@
 
 ## Open Questions / Next Steps
 1. Resolved (2026-07-17): Jekyll refactor #15 — declined; keep plain static HTML. See Project Status.
-2. Open: Visual/browser verification — all Session 1/2 changes verified structurally (grep), but not yet eyeballed in a real browser at desktop + phone widths. Favicon and responsive media query especially worth a look.
-3. Note: changes are in the working tree but NOT yet committed to git or pushed — Kevin hasn't asked to commit. `git rm --cached` was used for the junk files; `styles.css` was `git rm`'d.
+2. Open: Visual/browser verification — Session 3 changes WERE eyeballed in Chrome (localhost). Session 1/2 changes still only grep-verified.
+3. Note: changes are in the working tree but NOT yet committed to git or pushed — Kevin hasn't asked to commit.
+4. Open (Session 3): `pip3 install pyyaml` must be run on any machine that will run `generate.py` (Kevin's machine has it now, Python 3.7). Consider `pip3 freeze > requirements.txt` if collaborators appear.
+
+## Docs (Session 3, 2026-07-19)
+- `README.md` (repo root) is the **human-facing** guide for Kevin (how to add papers/photos/people, deploy) — merged in on 2026-07-19 per Kevin's request (he doesn't expect anyone to browse the GitHub repo, only the public site, so the long guide living in README is fine). Keep it in sync when the workflow changes — it duplicates some of what's here, but written for a person, not for Claude. (There was briefly a separate `HOW_TO_UPDATE.md`; it was folded into README and deleted.)
+
+## Paper generator (Session 3, 2026-07-19)
+- Papers on `index.html` are now generated from `papers.yml` via `python3 generate.py` (chosen over client-side fetch to keep deployed HTML fully static / Scholar-friendly / `file://`-previewable). Workflow: edit yml → run script → push.
+- Generator rewrites ONLY between `<!-- PAPERS:START ... -->` / `<!-- PAPERS:END -->`. Do not hand-edit inside.
+- `venue` is verbatim free-form HTML on purpose — the per-journal citation line varies too much (`<i>`, volume, year, linked journal name) to structure. `links` are structured `{label,url}`; rare grouped links use a `{raw: "(...)"}` escape hatch (only `binseg`'s "git 1, git 2"). `extra` is free HTML appended after links (only `NetworkSoSD`'s "Data (4.15 Gb…)" line). `note` handles `(*Equal contributions)` (only autism/Science).
+- Generator always emits a consistent Oxford "and" before the last author. This DELIBERATELY standardized 5 previously-inconsistent author lines (Clonotrace, sensGAN, GeoAdvAE, Tilted-CCA, autism/Science) — the only rendering changes vs the old hand-written HTML; abstracts/titles/venues/links/author-names are byte-identical. Autism's `*` after K.Z.Lin is now inside the bold span (bold asterisk) — cosmetically negligible.
+- Migration was done by a throwaway parser (scratchpad `extract_papers.py`) + round-trip diff (`verify.py`) against a backup, not hand-transcription — so `papers.yml` is faithful by construction.
+
+## Photo carousel (Session 3, 2026-07-19)
+- `people.html` "Lab photos" is now a self-contained carousel (inline `<style>`+vanilla JS scoped under `#labCarousel`; jQuery untouched). Newest-first slide order: 2026, 2025, 2024.
+- Uniform footprint achieved with a fixed `aspect-ratio: 5/3` stage + `object-fit: contain` over white bg → wider photos (2024/2025) get white letterbox bars, no cropping. This is the answer to Kevin's "add white if needed" ask.
+- Captions handwritten, mapped by last digit of the photo year (2026→2025-26, etc.), in the JS `captions[]` array — keep that array in sync with slide order if photos are added.
 
 ## Session Log
 

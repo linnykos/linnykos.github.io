@@ -30,23 +30,125 @@
 
   <div id="main">
     
-<!-- New Lab Photos Section -->
+<!-- Lab Photos Carousel -->
 <div class="content">
-  <!-- Section title above photo -->
   <div class="title">Lab photos</div>
-  <div style="text-align: center;">
-    <!-- The image: 500px wide, height auto-scaled -->
-    <img src="images/lab-photo-2025.png" width="500" alt="Lab photo 2025">
-    <!-- Caption below photo -->
-    <p>2025 (Spring) lab dinner</p>
+
+  <style>
+    #labCarousel { max-width: 500px; margin: 0 auto; }
+    #labCarousel .carousel-stage {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 5 / 3;          /* fixed footprint for all photos */
+      background: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 3px 3px 10px #888;
+      overflow: hidden;
+    }
+    #labCarousel .carousel-slide { position: absolute; inset: 0; display: none; }
+    #labCarousel .carousel-slide.active { display: block; }
+    #labCarousel .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;          /* scale to fit, never crop */
+      background: #fff;             /* leftover space filled white (letterbox) */
+      display: block;
+    }
+    #labCarousel .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      background: rgba(0,0,0,0.45);
+      color: #fff;
+      font-size: 26px;
+      line-height: 1;
+      width: 40px;
+      height: 48px;
+      cursor: pointer;
+      z-index: 2;
+    }
+    #labCarousel .carousel-btn:hover { background: rgba(0,0,0,0.7); }
+    #labCarousel .carousel-btn.prev { left: 0; }
+    #labCarousel .carousel-btn.next { right: 0; }
+    #labCarousel .carousel-caption {
+      text-align: center;
+      font-style: italic;
+      margin: 10px 0 4px;
+    }
+    #labCarousel .carousel-dots { text-align: center; margin-bottom: 10px; }
+    #labCarousel .carousel-dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      margin: 0 4px;
+      border-radius: 50%;
+      border: 1px solid #888;
+      background: #fff;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+    #labCarousel .carousel-dot.active { background: #555; border-color: #555; }
+    #labCarousel:focus { outline: none; }
+  </style>
+
+  <div id="labCarousel" tabindex="0" aria-roledescription="carousel" aria-label="Lab photos">
+    <div class="carousel-stage">
+      <button type="button" class="carousel-btn prev" aria-label="Previous photo">&#8249;</button>
+      <div class="carousel-slide active">
+        <img src="images/lab-photo-2026.png" alt="Lab photo, 2025-26 academic year">
+      </div>
+      <div class="carousel-slide">
+        <img src="images/lab-photo-2025.png" alt="Lab photo, 2024-25 academic year">
+      </div>
+      <div class="carousel-slide">
+        <img src="images/lab-photo-2024.jpg" alt="Lab photo, 2023-24 academic year">
+      </div>
+      <button type="button" class="carousel-btn next" aria-label="Next photo">&#8250;</button>
+    </div>
+    <p class="carousel-caption" aria-live="polite">Lab photo, taken the 2025-26 academic year.</p>
+    <div class="carousel-dots" aria-label="Choose lab photo">
+      <button type="button" class="carousel-dot active" aria-label="Photo 1 (2025-26)"></button>
+      <button type="button" class="carousel-dot" aria-label="Photo 2 (2024-25)"></button>
+      <button type="button" class="carousel-dot" aria-label="Photo 3 (2023-24)"></button>
+    </div>
   </div>
-  
-  <div style="text-align: center;">
-    <!-- The image: 500px wide, height auto-scaled -->
-    <img src="images/lab-photo-2024.jpg" width="500" alt="Lab photo 2024">
-    <!-- Caption below photo -->
-    <p>2024 (Spring) lab dinner</p>
-  </div>
+
+  <script>
+    (function () {
+      var root = document.getElementById('labCarousel');
+      if (!root) return;
+      var slides = root.querySelectorAll('.carousel-slide');
+      var dots = root.querySelectorAll('.carousel-dot');
+      var caption = root.querySelector('.carousel-caption');
+      var captions = [
+        'Lab photo, taken the 2025-26 academic year.',
+        'Lab photo, taken the 2024-25 academic year.',
+        'Lab photo, taken the 2023-24 academic year.'
+      ];
+      var i = 0;
+      function show(n) {
+        i = (n + slides.length) % slides.length;
+        for (var k = 0; k < slides.length; k++) {
+          slides[k].classList.toggle('active', k === i);
+          dots[k].classList.toggle('active', k === i);
+        }
+        caption.textContent = captions[i];
+      }
+      root.querySelector('.carousel-btn.prev').addEventListener('click', function () { show(i - 1); });
+      root.querySelector('.carousel-btn.next').addEventListener('click', function () { show(i + 1); });
+      for (var k = 0; k < dots.length; k++) {
+        (function (idx) {
+          dots[idx].addEventListener('click', function () { show(idx); });
+        })(k);
+      }
+      root.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') { show(i - 1); e.preventDefault(); }
+        else if (e.key === 'ArrowRight') { show(i + 1); e.preventDefault(); }
+      });
+    })();
+  </script>
 </div>
 
 <div class="content">

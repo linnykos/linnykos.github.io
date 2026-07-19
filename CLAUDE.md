@@ -24,7 +24,7 @@
 
 ## Conventions
 - **Adding a person's homepage**: add one entry to `websiteLinks` in `script.js`, then reference it in HTML with `<a class="link" href="" target="_blank" data-link="firstname_lastname">Name</a>`. The key must match exactly or the link resolves to the string `"undefined"` (a broken link).
-- **Adding a paper**: copy an existing `<div class="block">` in `index.html`, drop a thumbnail in `images/plot-*.png`, and place it under the correct `<div class="subtitle">` section (Preprints / Highlighted / Other).
+- **Adding a paper** (as of 2026-07-19): do NOT hand-edit the paper HTML in `index.html`. Edit `papers.yml` (one short entry per paper), drop a thumbnail in `images/plot-*.png`, then run `python3 generate.py`. The script rewrites only the region between `<!-- PAPERS:START ... -->` and `<!-- PAPERS:END -->` in `index.html`; everything else is left alone. Requires `pip3 install pyyaml` (once). See `papers.yml` header + `generate.py` docstring. Sections are `preprints` / `highlighted` / `other`; author flags are `emph: true` (bold lab member) and `link: firstname_lastname` (homepage via `script.js`).
 - **Bold author names** (`<span class="emph">`) denote Lin Lab members.
 - New files Claude drafts for review get a `_claude` suffix before the human integrates them.
 - The banner/nav/head block is duplicated across all four HTML files — edit them together to stay consistent.
