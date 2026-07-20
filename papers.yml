@@ -25,7 +25,7 @@
   pubtitle: 'SCOPE: Localizing fate-decision states and their regulatory drivers in single-cell differentiation'
   venue: '2026:'
   links:
-    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.64898/2026.04.07.717037v1'}
+    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.64898/2026.04.07.717037'}
     - {label: 'code: method and analysis', url: 'https://github.com/YiminZhao97/SCOPE'}
 
 - id: 'Clonotrace'
@@ -56,7 +56,7 @@
   pubtitle: 'Deciphering Cell Fate and Clonal Dynamics via Integrative Single-Cell Lineage Modeling'
   venue: '2025:'
   links:
-    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2025.09.01.673503v1'}
+    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2025.09.01.673503'}
     - {label: 'code: method', url: 'https://github.com/yuntianf/Clonotrace'}
 
 - id: 'ePRS'
@@ -98,7 +98,7 @@
   pubtitle: "Genetic risk in endolysosomal network genes correlates with endolysosomal dysfunction across neural cell types in Alzheimer's disease"
   venue: '2025:'
   links:
-    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2025.03.16.643481v3'}
+    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2025.03.16.643481'}
 
 - id: 'ODE'
   section: preprints
@@ -121,7 +121,7 @@
   pubtitle: 'Measuring regulatory network inheritance in dividing yeast cells using ordinary differential equations'
   venue: '2024:'
   links:
-    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2024.11.23.624995v2'}
+    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2024.11.23.624995'}
     - {label: 'code: method', url: 'https://github.com/WenbinWu2001/ODEinherit'}
     - {label: 'code: tutorial', url: 'https://wenbinwu2001.github.io/ODEinherit/'}
 
@@ -133,7 +133,7 @@
   abstract: >
     High-dimensional genomics studies are frequently confounded by unmeasured biological
     processes that obscure disease-specific signals. We introduce sensGAN, a deep-learning
-    adversarial framework that systematically explores the confounding spectrum by learning
+    adversarial framework that systematically explores the confounding spectrum at the pseudo-bulk level by learning
     "worst-case" latent variables that nullify gene associations under novel predictive-gain
     constraints. By treating confounding as a spectrum rather than a fixed correction, we can
     distinguish between transcripts robust to latent biological processes and those likely to
@@ -144,10 +144,9 @@
     - {name: 'Y. Lin', link: yifan_lin, emph: true}
     - {name: 'K. Z. Lin', emph: true}
   pubtitle: 'High-Dimensional Sensitivity Analysis for Genomic Studies: An Adversarial Framework for Learning Worst-Case Latent Confounders'
-  venue: '<a href="https://icml.cc/" target="_blank">International Conference of Machine Learning</a>: To be published 2026'
+  venue: '<a href="https://icml.cc/" target="_blank">International Conference of Machine Learning</a> To be published 2026:'
   links:
-    - {label: 'preprint main', url: 'papers/sensgan_main.pdf'}
-    - {label: 'preprint appendix', url: 'papers/sensgan_appendix.pdf'}
+    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.64898/2026.05.27.728283'}
     - {label: 'code: method and analysis', url: 'https://github.com/yifanlinz/AD_sensitivity_ICML'}
 
 - id: 'LCL'
@@ -168,11 +167,9 @@
     - {name: 'Y. Wang', link: yixin_wang}
     - {name: 'K. Z. Lin', emph: true}
   pubtitle: 'Leveraging lineage barcodes as natural augmentations for contrastive learning of cell fate in scRNA-seq data'
-  venue: '<a href="https://icml.cc/" target="_blank">International Conference of Machine Learning</a>: To be published 2026'
+  venue: '<a href="https://icml.cc/" target="_blank">International Conference of Machine Learning</a> To be published 2026:'
   links:
-    - {label: 'preprint main', url: 'papers/lcl_main.pdf'}
-    - {label: 'preprint appendix', url: 'papers/lcl_appendix.pdf'}
-    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2024.10.28.620670v1'}
+    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2024.10.28.620670'}
     - {label: 'code: method and analysis', url: 'https://github.com/SZ-yang/Lineage-aware_CL'}
 
 - id: 'Replicate'
@@ -195,9 +192,10 @@
     - {name: 'Y.-C. Chen', link: yenchi_chen}
     - {name: 'K. Z. Lin', emph: true}
   pubtitle: 'Quantifying stability via count splitting to guide model selection in RNA velocity analyses'
-  venue: '<a href="https://academic.oup.com/bioinformaticsadvances" target="_blank">Bioinformatics Advances</a>: To be published'
+  venue: '<a href="https://academic.oup.com/bioinformaticsadvances" target="_blank">Bioinformatics Advances</a> 6.1 (2026):'
   links:
-    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2024.11.23.625009v3'}
+    - {label: 'link', url: 'https://academic.oup.com/bioinformaticsadvances/article/6/1/vbag104/8653975'}
+    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2024.11.23.625009'}
     - {label: 'code: method and analysis', url: 'https://github.com/linnykos/veloUncertainty'}
 
 - id: 'GeoAdvAE'
@@ -220,7 +218,7 @@
   pubtitle: 'Integrating morphology and gene expression of neural cells in unpaired single-cell data using GeoAdvAE'
   venue: '<a href="https://recomb.org/proceedings/proceedings/2030-2026/2026/" target="_blank">RECOMB Proceedings 2026</a>:'
   links:
-    - {label: 'link', url: 'https://www.biorxiv.org/content/10.1101/2025.11.19.689368v2'}
+    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2025.11.19.689368'}
     - {label: 'code: method and analysis', url: 'https://github.com/turbodu222/GeoAdVAE'}
 
 - id: 'dynamic SBM'
@@ -241,7 +239,7 @@
     - {name: 'K. Z. Lin', emph: true}
     - {name: 'J. Lei', link: jing_lei}
   pubtitle: 'Dynamic clustering for heterophilic stochastic block models with time-varying node memberships'
-  venue: '<a href="https://academic.oup.com/biomet" target="_blank">Biometrika</a>: To be published (2026)'
+  venue: '<a href="https://academic.oup.com/biomet" target="_blank">Biometrika</a>: 113.2 (2026):'
   links:
     - {label: 'link', url: 'https://academic.oup.com/biomet/advance-article/doi/10.1093/biomet/asag018/8533255'}
     - {label: 'arxiv', url: 'https://arxiv.org/abs/2403.05654'}
@@ -272,7 +270,7 @@
     - {name: 'N. R. Zhang', link: nancy_zhang}
     - {name: 'S. Shaffer', link: sydney_shaffer}
   pubtitle: 'Pre-existing cell states predict resistance to multiple treatments'
-  venue: '<a href="https://www.cell.com/cell-genomics/home" target="_blank">Cell Genomics</a> 6 (2026): To be published'
+  venue: '<a href="https://www.cell.com/cell-genomics/home" target="_blank">Cell Genomics</a> 6.6 (2026):'
   links:
     - {label: 'link', url: 'https://www.cell.com/cell-genomics/fulltext/S2666-979X(26)00053-4'}
     - {label: 'code', url: 'https://github.com/SydShafferLab/BarcodeAnalysis'}
@@ -322,7 +320,7 @@
   venue: '<a href="https://bmcbioinformatics.biomedcentral.com/" target="_blank">BMC Bioinformatics</a> 25.1 (2024):'
   links:
     - {label: 'link', url: 'https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-024-05724-7'}
-    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2023.11.22.568369v2'}
+    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2023.11.22.568369'}
     - {label: 'code: method', url: 'https://github.com/linnykos/eSVD2'}
     - {label: 'code: analysis', url: 'https://github.com/linnykos/eSVD2_examples'}
     - {label: 'code: tutorials', url: 'https://linnykos.github.io/eSVD2/index.html'}
@@ -355,7 +353,7 @@
   venue: '<a href="https://www.nature.com/nbt/" target="_blank">Nature Biotechnology</a> 42 (2023):'
   links:
     - {label: 'link', url: 'https://www.nature.com/articles/s41587-023-01935-0'}
-    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2023.01.12.523851v2'}
+    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2023.01.12.523851'}
     - {label: 'code: method', url: 'https://github.com/shuxiaoc/maxfuse'}
     - {label: 'code: tutorials', url: 'https://maxfuse.readthedocs.io/en/latest/'}
 
@@ -381,7 +379,7 @@
   venue: '<a href="https://www.pnas.org/" target="_blank">Proceedings of the National Academy of Sciences</a> (PNAS) 120.32 (2023):'
   links:
     - {label: 'link', url: 'https://www.pnas.org/doi/10.1073/pnas.2303647120'}
-    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2022.10.07.511320v1'}
+    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2022.10.07.511320'}
     - {label: 'code: method', url: 'https://github.com/linnykos/tiltedCCA'}
     - {label: 'code: analysis', url: 'https://github.com/linnykos/tiltedCCA_analysis'}
     - {label: 'code: tutorials', url: 'https://linnykos.github.io/tiltedCCA/'}
@@ -434,7 +432,7 @@
   venue: '<i> <a href="https://amstat.tandfonline.com/toc/uasa20/current" target="_blank">Journal of the American Statistical Association</a> (JASA)</i> 116.534 (2021): 457-470'
   links:
     - {label: 'link', url: 'https://www.tandfonline.com/doi/abs/10.1080/01621459.2021.1886106'}
-    - {label: 'biorxiv', url: 'https://biorxiv.org/cgi/content/short/2020.09.25.313882v1'}
+    - {label: 'biorxiv', url: 'https://biorxiv.org/cgi/content/short/2020.09.25.313882'}
     - {label: 'git', url: 'https://github.com/linnykos/esvd'}
 
 - id: autism-science
@@ -516,7 +514,7 @@
   venue: '<i><a href="https://www.frontiersin.org/journals/genetics" target="_blank">Frontiers in Genetics</a></i> 14 (2023):'
   links:
     - {label: 'link', url: 'https://www.frontiersin.org/articles/10.3389/fgene.2023.1089936/full'}
-    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2022.11.04.515202v1'}
+    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2022.11.04.515202'}
 
 - id: wikipedia-bias
   section: other

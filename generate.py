@@ -133,7 +133,7 @@ def build_region(papers):
     out = []
     for key, heading, note in SECTIONS:
         group = [p for p in papers if p.get("section") == key]
-        out.append('<div class="subtitle">{0}</div>'.format(heading))
+        out.append('<div class="title">{0}</div>'.format(heading))
         if note:
             out.append(note)
         out.append("")
