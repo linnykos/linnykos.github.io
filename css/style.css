@@ -128,6 +128,13 @@ span.emph {
   color: #555;
   font-weight: bold;
 }
+/* Celebratory highlight: wrap "CONGRATULATIONS" (or similar) in
+   <span class="congrats">...</span> for a bold accent color. */
+.congrats {
+  color: #2e7d32;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
 .subtitle {
   color: #555;
   margin-left: 20px;

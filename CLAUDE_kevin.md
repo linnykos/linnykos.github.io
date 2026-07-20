@@ -40,6 +40,17 @@
 - Uniform footprint achieved with a fixed `aspect-ratio: 5/3` stage + `object-fit: contain` over white bg → wider photos (2024/2025) get white letterbox bars, no cropping. This is the answer to Kevin's "add white if needed" ask.
 - Captions handwritten, mapped by last digit of the photo year (2026→2025-26, etc.), in the JS `captions[]` array — keep that array in sync with slide order if photos are added.
 
+## Publications split + News (Session 4, 2026-07-20)
+- Research publications (all 3 sections) moved OFF `index.html` onto a new dedicated page **`publications.html`**. Nav item relabeled `research` → `publications` on all 5 pages. Chosen over `research.html`/`papers.html` by Kevin.
+- The "Articles" section (Significance piece) moved to `publications.html` too — `index.html` is now intro + funding/course-notes + a new **"News and Updates"** bulleted `<ul>` (below the intro `<hr>`, `id="news"` anchor, plain `<ul>` using the generic `ul`/`ul li` CSS — no custom class; a stale `ul#news li` rule already exists in style.css but the id lives on the anchor, so the generic `ul` styling is what applies).
+- First news bullet: congrats to Yifan Lin (Gilbert S. Omenn Award), award name linked to the SPH blog URL. Yifan's name left as plain text (has a `yifan_lin` key in script.js if we ever want to link it). Fixed the "prestigous"→"prestigious" typo from Kevin's dictation.
+- **`generate.py` now targets `publications.html`** (was `index.html`): `HTML_PATH` const + docstring + error/summary strings updated. Markers `<!-- PAPERS:START/END -->` now live ONLY in `publications.html`. Workflow unchanged otherwise: edit `papers.yml` → `python3 generate.py`. Confirmed idempotent (25 papers: 4/13/8).
+- publications.html built as an empty-marker shell, then populated by the generator (not hand-transcribed) — so paper markup is byte-identical to the old index.
+- Nav on subpages uses absolute `https://linnykos.github.io/publications.html`; index uses relative `publications.html` (matches each file's existing convention).
+- Docs synced: `README.md` (files table now lists publications.html; added a "News and Updates" edit pointer; "four"→"five" HTML files) and `CLAUDE.md` (repo layout, adding-a-paper convention, banner-duplication note).
+- Spec: `docs/superpowers/specs/2026-07-20-publications-page-and-news-design.md`.
+- NOT yet browser-verified (structural/grep-verified only) and NOT committed — Kevin hasn't asked to commit.
+
 ## Session Log
 
 ### 2026-07-17 (Session 1 — initial audit + bug/mobile fixes)
