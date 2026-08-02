@@ -60,6 +60,7 @@ const websiteLinks = {
     lie_wang: "https://scholar.google.com/citations?user=COubIkUAAAAJ&hl=en",
     donna_werling: "https://werling.genetics.wisc.edu/",
     rebecca_willet: "https://voices.uchicago.edu/willett/",
+    michael_wu: "https://research.fredhutch.org/wu/en.html",
     joshua_yang: "https://sz-yang.github.io/JoshuaYang.github.io/",
     jessica_young: "https://www.younglaboratory.com/",
     jingnan_zhang: "https://www.sta.cuhk.edu.hk/peoples/zhang-jingnan/",
