@@ -10,8 +10,9 @@
 - Also mirrored at: `/Users/kevinlin/Dropbox/Collaboration-and-People/website/linnylin92.github.io`
 - Deploy: push to the default branch → GitHub Pages serves at https://linnykos.github.io/ (no build step).
 
-## Project Status (as of 2026-07-17)
-- Static site, four pages: `index.html` (about + publications), `people.html`, `resources.html`, `funding.html`.
+## Project Status (as of 2026-09-17)
+- Static site, five pages: `index.html` (about + news), `publications.html`, `people.html`, `resources.html`, `funding.html`.
+- **UW hosting (Session 5, 2026-09-17):** Kevin is setting up a second copy on UW Shared Web Hosting (`ovid.u.washington.edu`, files in `~/public_html/`). Guide + email draft live in `additional_context/` (gitignored, local only). See `HISTORY_kevin.md` for the session; per-session logs now go there, not in this file.
 - Session 1: full audit + correctness/mobile fixes. Session 2: cleared the entire remaining audit list EXCEPT the Jekyll refactor (see log + Open Questions).
 - **Audit fully closed.** #15 (Jekyll `_includes`/layout refactor) was considered and **declined by Kevin on 2026-07-17** — keep the site as plain static HTML and accept the minor banner/head duplication across the 4 files. Do NOT re-propose the Jekyll conversion unless Kevin raises it. If the nav ever needs frequent edits, revisit then.
 
@@ -20,6 +21,7 @@
 - `script.js` now guards missing keys: renders plain text + `console.warn` instead of `href="undefined"` (changed 2026-07-17).
 
 ## Open Questions / Next Steps
+0. Open (Session 5): UW hosting — Kevin to try `additional_context/UW_HOSTING_STEPS.md` Steps 1–4; unknowns (public URL, VPN/Duo, redirect syntax) are in `email_draft_UWIT.md`. Undecided: full mirror vs. redirect-only. Recommended but not done: convert the 4 subpages' absolute `linnykos.github.io` nav links to relative so the UW copy is self-contained.
 1. Resolved (2026-07-17): Jekyll refactor #15 — declined; keep plain static HTML. See Project Status.
 2. Open: Visual/browser verification — Session 3 changes WERE eyeballed in Chrome (localhost). Session 1/2 changes still only grep-verified.
 3. Note: changes are in the working tree but NOT yet committed to git or pushed — Kevin hasn't asked to commit.
