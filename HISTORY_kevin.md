@@ -17,3 +17,10 @@
 - Open: the 4 subpages' nav links are absolute to `linnykos.github.io`; recommended converting to relative so the UW copy is self-contained. Not done — a site edit Kevin has not asked for yet.
 - Added `additional_context/` to `.gitignore` (verified via `git check-ignore`); folder was never committed.
 - Created this HISTORY file (project-state skill convention); did not migrate the older Session Log out of `CLAUDE_kevin.md`.
+
+### 2026-09-17 (Session 6 — relative nav links, UW_HOSTING_STEPS Step 2)
+- Did the edit recommended in Session 5 / `UW_HOSTING_STEPS.md` Step 2: the nav bars on `people.html`, `resources.html`, `funding.html`, `publications.html` now use relative hrefs. 16 links changed (4 per page), not "about 20" as the guide estimated — the guide counted the `cv` cell, which was already relative.
+- Scoped the replacement to lines containing `nav_cell` on purpose: three body links that look similar are NOT self-links and were left absolute — `linnykos.github.io/scOmicNotes/` (index.html:104, resources.html:61) and the eSVD2 / tiltedCCA pkgdown tutorial sites (publications.html:318, 362). Those are separate GitHub Pages projects and must stay absolute on any host.
+- Subpage "about" → `index.html`, not `index.html#about`: the `#about` form is only on `index.html` itself, where it is a same-page scroll target driven by the jQuery smooth-scroll handler. Using the anchor cross-page would have worked but changes scroll behavior on arrival; kept it plain per the guide's wording.
+- Verified by script: parsed every `nav_cell` href out of all five pages and confirmed each relative target exists on disk (25 links, 0 missing). Not browser-verified — the nav is the same flat-directory layout on both hosts, so relative resolution is unambiguous.
+- Not committed (consistent with prior sessions; Kevin hasn't asked).

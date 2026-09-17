@@ -21,7 +21,7 @@
 - `script.js` now guards missing keys: renders plain text + `console.warn` instead of `href="undefined"` (changed 2026-07-17).
 
 ## Open Questions / Next Steps
-0. Open (Session 5): UW hosting — Kevin to try `additional_context/UW_HOSTING_STEPS.md` Steps 1–4; unknowns (public URL, VPN/Duo, redirect syntax) are in `email_draft_UWIT.md`. Undecided: full mirror vs. redirect-only. Recommended but not done: convert the 4 subpages' absolute `linnykos.github.io` nav links to relative so the UW copy is self-contained.
+0. Open (Session 5): UW hosting — Kevin to try `additional_context/UW_HOSTING_STEPS.md` Steps 1–4; unknowns (public URL, VPN/Duo, redirect syntax) are in `email_draft_UWIT.md`. Undecided: full mirror vs. redirect-only. DONE 2026-09-17 (Session 6): the 4 subpages' nav links are now relative, so the site is host-agnostic (see HISTORY_kevin.md).
 1. Resolved (2026-07-17): Jekyll refactor #15 — declined; keep plain static HTML. See Project Status.
 2. Open: Visual/browser verification — Session 3 changes WERE eyeballed in Chrome (localhost). Session 1/2 changes still only grep-verified.
 3. Note: changes are in the working tree but NOT yet committed to git or pushed — Kevin hasn't asked to commit.
@@ -48,7 +48,7 @@
 - First news bullet: congrats to Yifan Lin (Gilbert S. Omenn Award), award name linked to the SPH blog URL. Yifan's name left as plain text (has a `yifan_lin` key in script.js if we ever want to link it). Fixed the "prestigous"→"prestigious" typo from Kevin's dictation.
 - **`generate.py` now targets `publications.html`** (was `index.html`): `HTML_PATH` const + docstring + error/summary strings updated. Markers `<!-- PAPERS:START/END -->` now live ONLY in `publications.html`. Workflow unchanged otherwise: edit `papers.yml` → `python3 generate.py`. Confirmed idempotent (25 papers: 4/13/8).
 - publications.html built as an empty-marker shell, then populated by the generator (not hand-transcribed) — so paper markup is byte-identical to the old index.
-- Nav on subpages uses absolute `https://linnykos.github.io/publications.html`; index uses relative `publications.html` (matches each file's existing convention).
+- Nav on subpages originally used absolute `https://linnykos.github.io/...` while index used relative; **all nav links are relative as of Session 6 (2026-09-17)** — keep new nav edits relative.
 - Docs synced: `README.md` (files table now lists publications.html; added a "News and Updates" edit pointer; "four"→"five" HTML files) and `CLAUDE.md` (repo layout, adding-a-paper convention, banner-duplication note).
 - Spec: `docs/superpowers/specs/2026-07-20-publications-page-and-news-design.md`.
 - NOT yet browser-verified (structural/grep-verified only) and NOT committed — Kevin hasn't asked to commit.
