@@ -77,25 +77,26 @@
     cellular phenotypes across neural cell types, suggesting that pathway-specific risk
     variants may drive mechanistic heterogeneity in AD.
   authors:
-    - {name: 'S. Mamde', link: sainath_mamde}
     - {name: 'S. E. Rose'}
     - {name: 'K. E. Prater', link: katherine_prater}
-    - {name: 'A. Cochoit'}
-    - {name: 'Y. F. Lin'}
+    - {name: 'S. Mamde', link: sainath_mamde}
     - {name: 'I. Smith', link: isa_smith}
-    - {name: 'C. S. Johnson', link: corbin_johnson}
+    - {name: 'Y. F. Lin'}
+    - {name: 'A. N. Cochoit'}
     - {name: 'A. N. Reid', link: aquene_reid}
+    - {name: 'C. S. C. Johnson', link: corbin_johnson}
     - {name: 'W. Qiu'}
     - {name: 'S. Strohbehn'}
+    - {name: 'C. S. Latimer'}
     - {name: 'C. D. Keene', link: dirk_keene}
-    - {name: 'B. A. Rolf', link: brad_rolf}
-    - {name: 'K. Z. Lin', emph: true}
     - {name: 'S. I. Lee', link: su_in_lee}
+    - {name: 'K. Z. Lin', emph: true}
+    - {name: 'B. A. Rolf', link: brad_rolf}
     - {name: 'G. A. Garden', link: gwenn_garden}
     - {name: 'E. E. Blue', link: elizabeth_blue}
     - {name: 'J. E. Young', link: jessica_young}
     - {name: 'S. Jayadev', link: suman_jayadev}
-  pubtitle: "Genetic risk in endolysosomal network genes correlates with endolysosomal dysfunction across neural cell types in Alzheimer's disease"
+  pubtitle: "Endolysosomal Alzheimer's disease genetic risk is associated with cell-type-specific organelle pathology and transcriptomic differences in human brain"
   venue: '2025:'
   links:
     - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2025.03.16.643481'}
@@ -146,6 +147,7 @@
   pubtitle: 'High-Dimensional Sensitivity Analysis for Genomic Studies: An Adversarial Framework for Learning Worst-Case Latent Confounders'
   venue: '<a href="https://icml.cc/" target="_blank">International Conference of Machine Learning</a> To be published 2026:'
   links:
+    - {label: 'link', url: 'https://icml.cc/virtual/2026/poster/64215'}
     - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.64898/2026.05.27.728283'}
     - {label: 'code: method and analysis', url: 'https://github.com/yifanlinz/AD_sensitivity_ICML'}
 
@@ -169,8 +171,67 @@
   pubtitle: 'Leveraging lineage barcodes as natural augmentations for contrastive learning of cell fate in scRNA-seq data'
   venue: '<a href="https://icml.cc/" target="_blank">International Conference of Machine Learning</a> To be published 2026:'
   links:
+    - {label: 'link', url: 'https://icml.cc/virtual/2026/poster/60771'}
     - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2024.10.28.620670'}
     - {label: 'code: method and analysis', url: 'https://github.com/SZ-yang/Lineage-aware_CL'}
+
+- id: 'GeoAdvAE'
+  section: highlighted
+  image: 'images/plot-geoadvae.png'
+  alt: 'GeoAdvAE method figure'
+  title: "GeoAdvAE: Diagonal integration of neural cell's morphology and transcriptomics"
+  abstract: >
+    A cell's morphology is a powerful readout of a cell's function and state. While microscopy
+    allows us to study neural cells' morphology, and single-nuclei RNA-sequencing allows us to
+    study a cell's transcriptomics, these two rich data sources are often performed on
+    separate cells due to technological limitations. This obstructs us from understanding how
+    a neural cell's transcriptomics modulates or responds to changes in its morphology. We
+    develop a deep-learning diagonal integration method, to overcome this technological
+    limitation. We validate our method on Patch-seq neurons and study genes that control
+    microglial morphology from the 5xFAD mouse model for Alzheimer's disease.
+  authors:
+    - {name: 'J. T. Du', link: turbo_du, emph: true}
+    - {name: 'T. Chartrand'}
+    - {name: 'S. Jayadev', link: suman_jayadev}
+    - {name: 'K. E. Prater', link: katherine_prater}
+    - {name: 'K. Z. Lin', emph: true}
+  pubtitle: 'Integrating morphology and gene expression of neural cells in unpaired single-cell data using GeoAdvAE'
+  venue: '<a href="https://journals.sagepub.com/home/cmb" target="_blank">Journal of Computational Biology</a> To be published 2026 (also in <a href="https://recomb.org/proceedings/proceedings/2030-2026/2026/" target="_blank">RECOMB Proceedings 2026</a>):'
+  links:
+    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2025.11.19.689368'}
+    - {label: 'code: method and analysis', url: 'https://github.com/turbodu222/GeoAdVAE'}
+
+- id: 'LATE-NC'
+  section: highlighted
+  image: 'images/plot-late.png'
+  alt: 'Volcano plot of astrocyte differential expression, ADNC vs. mixed LATE-NC and ADNC'
+  title: 'Non-neuronal signatures of LATE-NC, ADNC, and mixed pathology'
+  abstract: >
+    LATE-NC (a TDP-43 proteinopathy) often co-occurs with Alzheimer's disease neuropathologic
+    change (ADNC), which makes it hard to tell the two apart, and it is unclear how glial and
+    vascular cells differ across these pathologies. Using single-nucleus RNA-seq from the
+    SEA-AD middle temporal gyrus, we stratify donors into LATE-NC dominant, ADNC dominant,
+    and mixed pathology, and perform differential expression and gene set enrichment across
+    non-neuronal cell supertypes. Astrocytes, microglia, and oligodendrocytes show distinct
+    transcriptional patterns: LATE-NC dominant cases are enriched for signaling and RNA
+    regulation, ADNC dominant cases for mitochondrial dysfunction, and mixed pathology for
+    translational dysregulation and lipid remodeling, suggesting mixed pathology is its own
+    biological state.
+  authors:
+    - {name: 'Q. Qiao'}
+    - {name: 'Y. Katsumata'}
+    - {name: 'H. Y. Lai'}
+    - {name: 'K. Z. Lin', emph: true}
+    - {name: 'S. A. Claas'}
+    - {name: 'M. I. Gabitto'}
+    - {name: 'J. M. Morganti'}
+    - {name: 'P. T. Nelson'}
+    - {name: 'S. Mukherjee', link: shubhabrata_mukherjee}
+    - {name: 'D. W. Fardo'}
+  pubtitle: 'Distinct single-nucleus RNA-seq changes among non-neuronal cells in ADNC, LATE-NC, and mixed pathologies'
+  venue: '<a href="https://alz-journals.onlinelibrary.wiley.com/journal/15525279" target="_blank">Alzheimer&#39;s &amp; Dementia</a> 22.9 (2026):'
+  links:
+    - {label: 'link', url: 'https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.71810'}
 
 - id: 'Replicate'
   section: highlighted
@@ -197,29 +258,6 @@
     - {label: 'link', url: 'https://academic.oup.com/bioinformaticsadvances/article/6/1/vbag104/8653975'}
     - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2024.11.23.625009'}
     - {label: 'code: method and analysis', url: 'https://github.com/linnykos/veloUncertainty'}
-
-- id: 'GeoAdvAE'
-  section: highlighted
-  image: 'images/plot-geoadvae.png'
-  alt: 'GeoAdvAE method figure'
-  title: "GeoAdvAE: Diagonal integration of neural cell's morphology and transcriptomics"
-  abstract: >
-    A cell's morphology is a powerful readout of a cell's function and state. While microscopy
-    allows us to study neural cells' morphology, and single-nuclei RNA-sequencing allows us to
-    study a cell's transcriptomics, these two rich data sources are often performed on
-    separate cells due to technological limitations. This obstructs us from understanding how
-    a neural cell's transcriptomics modulates or responds to changes in its morphology. We
-    develop a deep-learning diagonal integration method, to overcome this technological
-    limitation. We validate our method on Patch-seq neurons and study genes that control
-    microglial morphology from the 5xFAD mouse model for Alzheimer's disease.
-  authors:
-    - {name: 'J. T. Du', link: turbo_du, emph: true}
-    - {name: 'K. Z. Lin', emph: true}
-  pubtitle: 'Integrating morphology and gene expression of neural cells in unpaired single-cell data using GeoAdvAE'
-  venue: '<a href="https://recomb.org/proceedings/proceedings/2030-2026/2026/" target="_blank">RECOMB Proceedings 2026</a>:'
-  links:
-    - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2025.11.19.689368'}
-    - {label: 'code: method and analysis', url: 'https://github.com/turbodu222/GeoAdVAE'}
 
 - id: 'dynamic SBM'
   section: highlighted
