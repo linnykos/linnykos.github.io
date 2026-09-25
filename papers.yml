@@ -223,11 +223,11 @@
     - {name: 'H. Y. Lai'}
     - {name: 'K. Z. Lin', emph: true}
     - {name: 'S. A. Claas'}
-    - {name: 'M. I. Gabitto'}
-    - {name: 'J. M. Morganti'}
-    - {name: 'P. T. Nelson'}
+    - {name: 'M. I. Gabitto', link: mariano_gabitto}
+    - {name: 'J. M. Morganti', link: josh_morganti}
+    - {name: 'P. T. Nelson', link: peter_nelson}
     - {name: 'S. Mukherjee', link: shubhabrata_mukherjee}
-    - {name: 'D. W. Fardo'}
+    - {name: 'D. W. Fardo', link: david_fardo}
   pubtitle: 'Distinct single-nucleus RNA-seq changes among non-neuronal cells in ADNC, LATE-NC, and mixed pathologies'
   venue: '<a href="https://alz-journals.onlinelibrary.wiley.com/journal/15525279" target="_blank">Alzheimer&#39;s &amp; Dementia</a> 22.9 (2026):'
   links:

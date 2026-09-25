@@ -81,3 +81,8 @@
   - Added `images/favicon.svg` ("KL" on #333) + `<link rel="icon">` on all 4 pages.
 - Deferred #15 (Jekyll refactor) — see Project Status / Open Questions.
 - Edits applied via two scratchpad scripts (fix_typos_alt.py, fix_structure.py), each reporting matched/not-found; all matched. Verified post-hoc by grep: 1 jQuery + 1 favicon per page, distinct titles, uniform footers, 0 images without alt, 0 broken data-link keys, 0 residual typos.
+
+### 2026-09-25 (Author homepage links for Qiao et al. 2026)
+- Added `script.js` keys `david_fardo`, `mariano_gabitto`, `josh_morganti`, `peter_nelson` and linked them in `papers.yml`; regenerated `publications.html`.
+- `josh_morganti`: key uses "Josh" (J. M. Morganti goes by Josh at UKy) — assumption; rename if Kevin prefers another key.
+- Not committed.
