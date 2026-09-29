@@ -91,3 +91,8 @@
 - Added the JCB eprint URL as the first `link` entry for GeoAdvAE in `papers.yml` (a published-journal link goes first and uses the `link` label, like the other papers); regenerated `publications.html`.
 - The venue text still says "To be published 2026". Left as is until Kevin confirms final volume/issue.
 - Not committed.
+
+### 2026-09-29 (Sentence-case title rule)
+- New standing rule from Kevin: all paper titles are sentence case (recorded in `CLAUDE.md` Conventions and the `papers.yml` header). Applies to both the short `title` and the full `pubtitle`, even when the journal's own title is Title Case.
+- Retitled 5 fields: Clonotrace pubtitle, sensGAN title ("Analysis") + pubtitle, Wikipedia-bias pubtitle, fused-lasso pubtitle ("Lasso"→"lasso": treated as a common noun, matching the short title). Words kept capitalized as proper nouns/acronyms: Alzheimer's, Wikipedia, RNA, LATE-NC/ADNC, Li (Li et al.), method names.
+- Not committed.
