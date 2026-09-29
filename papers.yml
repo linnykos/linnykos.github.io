@@ -198,6 +198,7 @@
   pubtitle: 'Integrating morphology and gene expression of neural cells in unpaired single-cell data using GeoAdvAE'
   venue: '<a href="https://journals.sagepub.com/home/cmb" target="_blank">Journal of Computational Biology</a> To be published 2026 (also in <a href="https://recomb.org/proceedings/proceedings/2030-2026/2026/" target="_blank">RECOMB Proceedings 2026</a>):'
   links:
+    - {label: 'link', url: 'https://journals.sagepub.com/eprint/DQAPHSUT3HUVGQHUN5NN/full'}
     - {label: 'biorxiv', url: 'https://www.biorxiv.org/content/10.1101/2025.11.19.689368'}
     - {label: 'code: method and analysis', url: 'https://github.com/turbodu222/GeoAdVAE'}
 

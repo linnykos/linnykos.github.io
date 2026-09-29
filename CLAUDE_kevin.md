@@ -86,3 +86,8 @@
 - Added `script.js` keys `david_fardo`, `mariano_gabitto`, `josh_morganti`, `peter_nelson` and linked them in `papers.yml`; regenerated `publications.html`.
 - `josh_morganti`: key uses "Josh" (J. M. Morganti goes by Josh at UKy) — assumption; rename if Kevin prefers another key.
 - Not committed.
+
+### 2026-09-29 (GeoAdvAE JCB link)
+- Added the JCB eprint URL as the first `link` entry for GeoAdvAE in `papers.yml` (a published-journal link goes first and uses the `link` label, like the other papers); regenerated `publications.html`.
+- The venue text still says "To be published 2026". Left as is until Kevin confirms final volume/issue.
+- Not committed.
