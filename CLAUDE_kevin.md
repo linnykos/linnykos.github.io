@@ -96,3 +96,7 @@
 - New standing rule from Kevin: all paper titles are sentence case (recorded in `CLAUDE.md` Conventions and the `papers.yml` header). Applies to both the short `title` and the full `pubtitle`, even when the journal's own title is Title Case.
 - Retitled 5 fields: Clonotrace pubtitle, sensGAN title ("Analysis") + pubtitle, Wikipedia-bias pubtitle, fused-lasso pubtitle ("Lasso"→"lasso": treated as a common noun, matching the short title). Words kept capitalized as proper nouns/acronyms: Alzheimer's, Wikipedia, RNA, LATE-NC/ADNC, Li (Li et al.), method names.
 - Not committed.
+
+### 2026-10-11 (People: Amy Watt / Mohamad Bairakdar roles)
+- Amy Watt: "Independent study" → "Thesis advisee"; appended data-fission microglial project to "Studying:". Mohamad Bairakdar: → "Research assistant" (lowercase to match the other role labels, per Kevin).
+- Not committed.
