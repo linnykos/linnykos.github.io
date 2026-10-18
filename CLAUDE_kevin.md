@@ -107,3 +107,8 @@
 - **`generate.py` gotcha:** when a conda env is active, `python3` resolves to the conda Python (e.g. `pdf_sanitize`), which has no PyYAML. Run `/usr/local/bin/python3 generate.py` (3.7, has PyYAML 6.0.1).
 - Not committed.
 - Follow-up: Kevin supplied homepages → added `script.js` keys `andreas_pfenning`, `saori_sakaue`, `martin_zhang` (alphabetical by last name, like the rest of the dict) and linked them in the scDRS-FM entry. Turcan and Hou still unlinked.
+
+### 2026-10-18 (People: added Grace and Ives)
+- Grace (Biostatistics PhD, Research assistant) placed after Mohamad; Ives (Biostatistics Masters) placed after Rita. Kevin gave first names only, so the name and alt text are first name only. Add last names if Kevin supplies them.
+- No email lines and no `script.js` homepage keys for either one yet.
+- Not committed.
