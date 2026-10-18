@@ -4,6 +4,33 @@
 # titles (title + pubtitle): sentence case. Capitalize only the first word, the first word
 #   after a ':', and proper nouns/acronyms/method names (e.g. RNA, Alzheimer's, GeoAdvAE, Wikipedia).
 
+- id: 'scDRS-FM'
+  section: preprints
+  image: 'images/plot-scdrs.png'
+  alt: 'scDRS-FM causal versus tagging cells schematic'
+  title: 'scDRS-FM: Distinguishing causal from tagging disease-critical cells in scRNA-seq'
+  abstract: >
+    Methods that integrate GWAS with scRNA-seq often associate a disease with many correlated
+    cell populations, many of which are "tagging" cells that share expression programs with the
+    truly causal cells. We introduce scDRS-FM, which fine-maps disease associations at
+    single-cell resolution by testing conditional polygenic enrichment relative to the other
+    cell populations in the dataset. Applied to Alzheimer's disease in a multi-region human
+    brain atlas, scDRS-FM pinpointed microglia and L6 intratelencephalic excitatory neurons as independent
+    disease-critical populations. Within microglia, risk concentrated in cells that had lost
+    their homeostatic program and resided in the midtemporal gyrus, dorsolateral prefrontal
+    cortex, and medial entorhinal cortex, an early site of tau pathology.
+  authors:
+    - {name: 'A. Turcan'}
+    - {name: 'K. Hou'}
+    - {name: 'K. Z. Lin', emph: true}
+    - {name: 'A. Pfenning', link: andreas_pfenning}
+    - {name: 'S. Sakaue', link: saori_sakaue}
+    - {name: 'M. J. Zhang', link: martin_zhang}
+  pubtitle: 'Conditional polygenic enrichment distinguishes causal from tagging disease-critical cell populations in single-cell RNA-seq'
+  venue: '2026:'
+  links:
+    - {label: 'medrxiv', url: 'https://www.medrxiv.org/content/10.64898/2026.08.20.26360914'}
+
 - id: 'SCOPE'
   section: preprints
   image: 'images/plot-scope.png'

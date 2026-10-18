@@ -100,3 +100,10 @@
 ### 2026-10-11 (People: Amy Watt / Mohamad Bairakdar roles)
 - Amy Watt: "Independent study" → "Thesis advisee"; appended data-fission microglial project to "Studying:". Mohamad Bairakdar: → "Research assistant" (lowercase to match the other role labels, per Kevin).
 - Not committed.
+
+### 2026-10-17 (Added scDRS-FM preprint, Turcan et al. 2026)
+- New `preprints` entry `scDRS-FM`, placed first (newest, medRxiv Aug 2026). Per Kevin, the abstract focuses on the Alzheimer's application (microglia + L6 IT neurons; microglia that have lost the homeostatic program, in MTG/DFC/MEC).
+- Only K. Z. Lin is bold: no Lin Lab members among the co-authors. No homepage links added, since none of Turcan/Hou/Pfenning/Sakaue/M. J. Zhang has a `script.js` key yet.
+- **`generate.py` gotcha:** when a conda env is active, `python3` resolves to the conda Python (e.g. `pdf_sanitize`), which has no PyYAML. Run `/usr/local/bin/python3 generate.py` (3.7, has PyYAML 6.0.1).
+- Not committed.
+- Follow-up: Kevin supplied homepages → added `script.js` keys `andreas_pfenning`, `saori_sakaue`, `martin_zhang` (alphabetical by last name, like the rest of the dict) and linked them in the scDRS-FM entry. Turcan and Hou still unlinked.
