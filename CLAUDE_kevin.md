@@ -116,3 +116,7 @@
 ### 2026-10-18 (People: Haoye Yang department)
 - Kevin asked to change Haoye's department from "Human Genetics" to GGSB, but the file already said "Genetics, Genomics and Systems Biology" (changed in an earlier commit, 853d08c). Reworded to Kevin's exact form: "PhD in GGSB (Committee on Genetics, Genomics and Systems Biology), University of Chicago". If the live site still shows "Human Genetics", it is a browser/Pages cache issue, not the repo.
 - Not committed.
+
+### 2026-10-18 (People: Grace / Ives full names)
+- Full names from Kevin: "Weiqi (Grace) Li" and "Hongqing (Ives) Xue". This (Legal (Preferred) Last) form is used in both the heading and the img alt text. Ives's program corrected: Biostatistics → "Statistics, Masters". Rita stays Biostatistics.
+- Not committed.
