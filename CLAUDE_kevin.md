@@ -120,3 +120,7 @@
 ### 2026-10-18 (People: Grace / Ives full names)
 - Full names from Kevin: "Weiqi (Grace) Li" and "Hongqing (Ives) Xue". This (Legal (Preferred) Last) form is used in both the heading and the img alt text. Ives's program corrected: Biostatistics → "Statistics, Masters". Rita stays Biostatistics.
 - Not committed.
+
+### 2026-11-15 (People: Scholar links, full names)
+- Renamed to "Michael C. Yung" and "Mohamad Daniel Bairakdar" (heading + img alt). Added a "(Google Scholar)" link right after the name in the heading for Yimin, Mohamad, and Michael, like the alumni "(Webpage)" links. These are the first current members with a homepage link. New `script.js` keys `mohamad_bairakdar` and `michael_yung`; Yimin reuses the existing `yimin_zhao` key, which already had the same Scholar URL.
+- Not committed.

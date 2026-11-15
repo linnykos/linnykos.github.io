@@ -1,5 +1,6 @@
 const websiteLinks = {
     joonyong_an: "https://joonanlab.github.io/team/joonan.html",
+    mohamad_bairakdar: "https://scholar.google.com/citations?user=DlT4dqkAAAAJ&hl=en&oi=ao",
     elizabeth_blue: "https://drlizblue.org/",
     shuxiao_chen: "https://sxc.moe/",
     li_chen: "https://biostat.ufl.edu/profile/chen-li-1/",
@@ -69,6 +70,7 @@ const websiteLinks = {
     michael_wu: "https://research.fredhutch.org/wu/en.html",
     joshua_yang: "https://sz-yang.github.io/JoshuaYang.github.io/",
     jessica_young: "https://www.younglaboratory.com/",
+    michael_yung: "https://scholar.google.com/citations?user=L-8jIrwAAAAJ&hl=en",
     jingnan_zhang: "https://www.sta.cuhk.edu.hk/peoples/zhang-jingnan/",
     martin_zhang: "https://mzhanglab.github.io/",
     nancy_zhang: "https://nzhanglab.github.io/",
